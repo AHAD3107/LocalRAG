@@ -1,0 +1,33 @@
+﻿# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.pytest_cache/
+
+# Local RAG Data - Strictly Protect Private Documents and Vector Indexes
+data/documents/*
+!data/documents/.gitkeep
+data/index/*
+!data/index/.gitkeep
+*.pdf
+*.npz
+*.npy
+
+# Environment Variables & Secrets
+.env
+*.env
+.env.*
+
+# OS & Editor Artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
