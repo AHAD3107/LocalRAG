@@ -10,6 +10,17 @@ from src.ingestion.models import (
     compute_chunk_id,
     compute_sha256,
 )
+from src.ingestion.pdf_extractor import (
+    CorruptPDFError,
+    EmptyPDFError,
+    EncryptedPDFError,
+    PDFExtractionError,
+    extract_page_text,
+    extract_pdf,
+    extract_pdf_document,
+    extract_pdf_result,
+    normalize_text,
+)
 
 __all__ = [
     "Chunk",
@@ -19,4 +30,13 @@ __all__ = [
     "IngestionStatus",
     "compute_chunk_id",
     "compute_sha256",
+    "CorruptPDFError",
+    "EmptyPDFError",
+    "EncryptedPDFError",
+    "PDFExtractionError",
+    "extract_page_text",
+    "extract_pdf",
+    "extract_pdf_document",
+    "extract_pdf_result",
+    "normalize_text",
 ]
