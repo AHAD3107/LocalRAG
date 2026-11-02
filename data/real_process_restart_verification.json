@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-10-31T08:38:15.440235+00:00",
+  "test_port": 8008,
+  "secret_passphrase": "Falcon-7729-Omega-Verified",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Spawn Backend Process 1",
+      "pid": 25092,
+      "status": "SUCCESS"
+    },
+    {
+      "step": 2,
+      "description": "Upload sample PDF on Process 1",
+      "response": {
+        "document_id": "c3e01c18dd534c2022c602471aeb86d4f25ec6dc1a72b5c6d6290556061742f0",
+        "filename": "restart_test_document.pdf",
+        "status": "success",
+        "chunks": 1,
+        "warnings": []
+      },
+      "status": "SUCCESS"
+    },
+    {
+      "step": 3,
+      "description": "Query Process 1 and verify answer and citations",
+      "answer": "LocalRAG Reliability and Persistence Protocol.\n\nThe secret server restart verification passphrase is 'Falcon-7729-Omega-Verified'.\nThis security passphrase verifies that NumPy vector index archives and disk files\nsurvive genuine operating system process termination, memory purging, and re-initialization. [Source 1]",
+      "sources": [
+        {
+          "filename": "restart_test_document.pdf",
+          "page": 1,
+          "score": 0.8937814235687256,
+          "text": "LocalRAG Reliability and Persistence Protocol.\n\nThe secret server restart verification passphrase is 'Falcon-7729-Omega-Verified'.\nThis security passphrase verifies that NumPy vector index archives and disk files\nsurvive genuine operating system process termination, memory purging, and re-initialization."
+        }
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "step": 4,
+      "description": "Terminate Process 1 and confirm memory purge",
+      "pid": 25092,
+      "status": "SUCCESS"
+    },
+    {
+      "step": 5,
+      "description": "Spawn independent Backend Process 2",
+      "pid": 22140,
+      "prior_pid": 25092,
+      "status": "SUCCESS"
+    },
+    {
+      "step": 6,
+      "description": "List documents on Process 2 and verify persistence",
+      "documents": [
+        {
+          "document_id": "c3e01c18dd534c2022c602471aeb86d4f25ec6dc1a72b5c6d6290556061742f0",
+          "filename": "restart_test_document.pdf",
+          "chunks": 1
+        }
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "step": 7,
+      "description": "Query Process 2 and verify answer and source citations",
+      "answer": "LocalRAG Reliability and Persistence Protocol.\n\nThe secret server restart verification passphrase is 'Falcon-7729-Omega-Verified'.\nThis security passphrase verifies that NumPy vector index archives and disk files\nsurvive genuine operating system process termination, memory purging, and re-initialization. [Source 1]",
+      "sources": [
+        {
+          "filename": "restart_test_document.pdf",
+          "page": 1,
+          "score": 0.8937814235687256,
+          "text": "LocalRAG Reliability and Persistence Protocol.\n\nThe secret server restart verification passphrase is 'Falcon-7729-Omega-Verified'.\nThis security passphrase verifies that NumPy vector index archives and disk files\nsurvive genuine operating system process termination, memory purging, and re-initialization."
+        }
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "step": 8,
+      "description": "Delete document on Process 2 and verify index cleanup",
+      "deleted_chunks": 1,
+      "status": "SUCCESS"
+    }
+  ],
+  "overall_success": true
+}

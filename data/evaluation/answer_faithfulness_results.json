@@ -1,0 +1,1859 @@
+{
+  "summary": {
+    "total_audited": 56,
+    "grounded_queries_evaluated": 26,
+    "unsupported_queries_evaluated": 15,
+    "hard_negatives_evaluated": 15,
+    "unsupported_refusal_rate": 1.0,
+    "hard_negative_refusal_rate": 0.3333,
+    "average_technical_term_preservation": 0.7242,
+    "citation_presence_rate": 0.0
+  },
+  "records": [
+    {
+      "question_id": "md_q001",
+      "category": "Exact factual",
+      "question": "What is the default value for Prior Knowledge P(L0) in BKT?",
+      "expected_answer": "0.20",
+      "should_reject": false,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        }
+      ],
+      "generated_answer": "The default value for Prior Knowledge P(L0) in BKT is 20%. This can be stated directly from the provided reference material.",
+      "is_refusal": false,
+      "expected_terms": [
+        "0.20"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q002",
+      "category": "Exact factual",
+      "question": "What does the binary Q-matrix represent in the DINA model?",
+      "expected_answer": "A binary table linking test questions to latent psychological skills",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        }
+      ],
+      "generated_answer": "The binary Q-matrix represents the skills that a student must master (\u03b1k = 1) in order to answer each question correctly (qjk = 1).",
+      "is_refusal": false,
+      "expected_terms": [],
+      "preserved_terms": [],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q003",
+      "category": "Exact factual",
+      "question": "What is the inference latency target for KnowledgeTrace MCQ?",
+      "expected_answer": "< 15ms (NumPy Vectorized)",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 2,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+        }
+      ],
+      "generated_answer": "The inference latency target for KnowledgeTrace MCQ is 15ms. \n\nThis fact can be directly stated from Source 1: \"L < 15ms (NumPy Vectorized)\". There is no mention of a specific inference latency target, so I should have said that clearly rather than making an assumption.",
+      "is_refusal": false,
+      "expected_terms": [
+        "15ms",
+        "numpy",
+        "vectorized"
+      ],
+      "preserved_terms": [
+        "15ms",
+        "numpy",
+        "vectorized"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q004",
+      "category": "Exact factual",
+      "question": "Who formalized the DINA cognitive diagnosis model and in which year?",
+      "expected_answer": "Junker & Sijtsma (2001)",
+      "should_reject": false,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        }
+      ],
+      "generated_answer": "The DINA cognitive diagnosis model was formalized by Junker and Sijtsma in the year 2001.",
+      "is_refusal": false,
+      "expected_terms": [
+        "2001",
+        "junker",
+        "sijtsma"
+      ],
+      "preserved_terms": [
+        "2001",
+        "junker",
+        "sijtsma"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q005",
+      "category": "Exact factual",
+      "question": "What is the guess probability in a 4-choice question in KnowledgeTrace MCQ?",
+      "expected_answer": "25% chance of guessing correctly",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+        }
+      ],
+      "generated_answer": "The direct factual statement that answers the question is:\n\nIn a 4-choice question, there is a 25% chance of guessing correctly without knowing the answer.",
+      "is_refusal": false,
+      "expected_terms": [
+        "25"
+      ],
+      "preserved_terms": [
+        "25"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q006",
+      "category": "Exact factual",
+      "question": "What are the standard disk page sizes in PostgreSQL and MySQL InnoDB?",
+      "expected_answer": "8 KB for PostgreSQL and 16 KB for MySQL InnoDB",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c0"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that answers the question regarding standard disk page sizes in PostgreSQL and MySQL InnoDB. The text only discusses buffer pool management and eviction algorithms, but does not provide information on disk page sizes.\n\nThe reference material does mention that \"disk pages are sized at 8 KB (PostgreSQL) or 16 KB (MySQL InnoDB)\" for alignment with hardware block boundaries, but this is not a standard disk page size.",
+      "is_refusal": true,
+      "expected_terms": [
+        "16",
+        "8",
+        "innodb",
+        "mysql",
+        "postgresql"
+      ],
+      "preserved_terms": [
+        "16",
+        "8",
+        "innodb",
+        "mysql",
+        "postgresql"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q007",
+      "category": "Exact factual",
+      "question": "What are the three distinct phases of the ARIES recovery algorithm?",
+      "expected_answer": "Analysis Phase, Redo Phase, and Undo Phase",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c3"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2"
+        }
+      ],
+      "generated_answer": "There are no direct factual statements in the reference material that answer the question about the three distinct phases of the ARIES recovery algorithm. The reference material only provides general information on the ARIES recovery framework, including its phases and requirements for durability (Durability). However, it does not provide specific information on what those phases entail.\n\nTherefore, I must conclude that there is insufficient evidence to answer the question directly from the provided reference material.",
+      "is_refusal": true,
+      "expected_terms": [
+        "analysis",
+        "phase",
+        "redo",
+        "undo"
+      ],
+      "preserved_terms": [
+        "phase"
+      ],
+      "term_preservation_rate": 0.25,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q008",
+      "category": "Exact factual",
+      "question": "What fanout factor M is achieved by an 8 KB B+ Tree internal node storing 8-byte keys and 8-byte pointers?",
+      "expected_answer": "M = 512",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+        }
+      ],
+      "generated_answer": "An 8 KB B+ Tree internal node achieves a fanout factor M of 512, which is stated in the reference material as follows:\n\n* Node Fanout: For an 8 KB page storing 8-byte integer keys and 8-byte page pointers, an internal node achieves a fanout factor M = 512.",
+      "is_refusal": false,
+      "expected_terms": [
+        "512"
+      ],
+      "preserved_terms": [
+        "512"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q009",
+      "category": "Exact factual",
+      "question": "What background cycle-detection algorithm detects deadlocks in the Wait-For Graph every 500 ms?",
+      "expected_answer": "Tarjan's strongly connected components algorithm",
+      "should_reject": false,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c10"
+        }
+      ],
+      "generated_answer": "The background cycle-detection algorithm detects deadlocks in the Wait-For Graph every 500 ms using Tarjan's strongly connected components algorithm.",
+      "is_refusal": false,
+      "expected_terms": [
+        "tarjan"
+      ],
+      "preserved_terms": [
+        "tarjan"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q010",
+      "category": "Exact factual",
+      "question": "How many virtual nodes (vnodes) is each physical server mapped to in the consistent hashing ring?",
+      "expected_answer": "256 virtual nodes (vnodes)",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c13"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14"
+        }
+      ],
+      "generated_answer": "There is direct factual information regarding the number of virtual nodes (vnodes) per physical server in the consistent hashing ring. According to [Source 1, page 4], each physical server is mapped to:\n\n1. Data Partitioning and Consistent Hashing: \"each physical server is mapped to 256 virtual nodes (vnodes) across the ring.\"\n\n[Source 2, page 4] also confirms this information.\n\nSince there is a direct and sufficient evidence provided in both sources, I will state that fact plainly: Each physical server is mapped to 256 virtual nodes (vnodes).",
+      "is_refusal": false,
+      "expected_terms": [
+        "256"
+      ],
+      "preserved_terms": [
+        "256"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q051",
+      "category": "Multi-chunk",
+      "question": "Explain the complete lifecycle of a student answer from ingestion to BKT and DINA diagnosis.",
+      "expected_answer": "Step 1 HTTP POST, Step 2 synchronous validation, Step 3 asynchronous Celery dispatch, Step 4 BKT mastery update and DINA Q-matrix partitioning.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 2,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 5,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        }
+      ],
+      "generated_answer": "Based on the provided reference material, here is a concise explanation of the complete lifecycle of a student answer from ingestion to BKT (Bayesian Knowledge Trace) and DINA (Double Inference Node Algorithm) diagnosis:\n\n1. **Ingestion**: The student's browser sends responses to a FastAPI router, which then calls the `submit_response()` function.\n2. **Background Tasks worker spawn**: A background task is started to perform binary validation and non-blocking synchronization of responses.\n3. **Layer 2 BKT Estimator (compute_bkt_sequence())**: The response from Step 1 is passed to this layer, where it is processed using the Bayesian HMM Forward Algorithm to calculate the new mastery probability `P(Lt)` and saves it as `mastery_p`.\n4. **Layer 3 DINA Diagnosis (update_diagnosis())**: The `mastery_p` value from Step 3 is used by the DINA service to perform multi-skill diagnosis.\n5. **Layer 2 BKT Estimator (compute_bkt_sequence())**:\n\t* The response from Step 1 is passed to this layer, where it is processed using the Bayesian HMM Forward Algorithm to calculate the new mastery probability `P(Lt)` and saves it as `mastery_p`.\n6. **Layer 3 DINA Diagnosis (update_diagnosis())**: The `mastery_p` value from Step 4 is used by the DINA service to perform multi-skill diagnosis.\n7. **Layer 2 BKT Estimator (compute_bkt_sequence())**:\n\t* The response from Step 1 is passed to this layer, where it is processed using the Bayesian HMM Forward Algorithm to calculate the new mastery probability `P(Lt)` and saves it as `mastery_p`.\n8. **Layer 3 DINA Diagnosis (update_diagnosis())**: The `mastery_p` value from Step 6 is used by the DINA service to perform multi-skill diagnosis.\n\nThe exact steps of the Bayesian Knowledge Trace are not explicitly stated in the reference material, but it can be inferred that they involve:\n\n* Tracking practice momentum in Layer 2\n* Performing surgical multi-skill diagnosis in Layers 3 (BKT and DINA)\n* Updating mastery probability using the computed BKT sequence in both layers",
+      "is_refusal": false,
+      "expected_terms": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "bkt",
+        "celery",
+        "dina",
+        "http",
+        "post",
+        "q-matrix",
+        "step"
+      ],
+      "preserved_terms": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "bkt",
+        "dina",
+        "step"
+      ],
+      "term_preservation_rate": 0.64,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q052",
+      "category": "Multi-chunk",
+      "question": "How do the DINA model and Bayesian Knowledge Tracing collaborate to provide holistic student assessment?",
+      "expected_answer": "BKT tracks sequential mastery over time as an HMM, while DINA evaluates multi-attribute skill requirements via a binary Q-matrix.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+        }
+      ],
+      "generated_answer": "The DINA model and Bayesian Knowledge Tracing collaborate to provide holistic student assessment by:\n\n* Incorporating the \"Layer 3 \u2014 Multi-Attribute Cognitive Diagnosis (DINA Model)\" in Bayesian Knowledge Tracing (BKT), where the DINA model is used to formalize a student's ability as a binary vector \u03b1 = (\u03b11, \u03b12, ..., \u03b1K) with each \u03b1k \u2208 {0, 1}. This allows for more nuanced assessments of multiple skills. \n\nThere is no direct or sufficient evidence provided in the reference material that explains how the DINA model and Bayesian Knowledge Tracing collaborate to provide holistic student assessment.",
+      "is_refusal": false,
+      "expected_terms": [
+        "bkt",
+        "dina",
+        "hmm",
+        "q-matrix"
+      ],
+      "preserved_terms": [
+        "bkt",
+        "dina"
+      ],
+      "term_preservation_rate": 0.5,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q053",
+      "category": "Multi-chunk",
+      "question": "What are the mathematical equations for BKT prior update and confidence score calculation?",
+      "expected_answer": "BKT uses Bayesian posterior update P(L_t|obs), while Confidence = 1 - 4 * P * (1 - P).",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 2,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+        }
+      ],
+      "generated_answer": "There is no direct statement about the mathematical equations for BKT prior update and confidence score calculation. However, a supporting source mentions the following equation:\n\n\"CONFIDENCE METRIC & RELIABILITY TIERS (Implemented in dina_service.py)\n\nConfidence Score Equation:    Confidence = 1 \u2212 4 \u00d7 P\"\n\nThis implies that the equation used to calculate the epistemic confidence score is \"P\" for posterior probability.",
+      "is_refusal": false,
+      "expected_terms": [
+        "1",
+        "4",
+        "bayesian",
+        "bkt",
+        "confidence",
+        "l_t"
+      ],
+      "preserved_terms": [
+        "1",
+        "4",
+        "bkt",
+        "confidence"
+      ],
+      "term_preservation_rate": 0.67,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q054",
+      "category": "Multi-chunk",
+      "question": "What benchmarks validate concept DAG sequencing and cognitive diagnosis scalability?",
+      "expected_answer": "ASSISTments (Worcester) validates BKT with AUC ~0.73, Junyi Academy validates 835 concept DAG, and Tatsuoka validates Q-matrix DINA.",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+        }
+      ],
+      "generated_answer": "The direct factual statement that answers the question is:\n\nKnowledgeTrace MCQ are based on standard educational data mining benchmarks in psychometric literature.\n\nThis fact can be summarized as: \"KnowledgeTrace MCQ are validated by the Assisting System 2009-2010 dataset.\"",
+      "is_refusal": false,
+      "expected_terms": [
+        "0.73",
+        "835",
+        "academy",
+        "assistments",
+        "auc",
+        "bkt",
+        "dag",
+        "dina",
+        "junyi",
+        "q-matrix",
+        "tatsuoka",
+        "worcester"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q055",
+      "category": "Multi-chunk",
+      "question": "How does ARIES recovery interact with Write-Ahead Logging and checkpoints during system crash recovery?",
+      "expected_answer": "WAL flushes dirty page logs before writes; upon crash, ARIES Analysis identifies dirty pages from checkpoint, Redo replays history, Undo reverses uncommitted transactions.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c3"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7"
+        },
+        {
+          "source_id": 4,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c8"
+        }
+      ],
+      "generated_answer": "The ARIES recovery interaction with Write-Ahead Logging (WAL) during system crash recovery is as follows:\n\nARIES ensures durability through the Write-Ahead Logging protocol following the ARIES recovery framework, which includes three distinct phases: analysis, redo, and undo.\n\n1. The WAL protocol guarantees that log records representing changes are flushed to non-volatile disk before corresponding dirty data pages are written to disk.\n2. During system crash recovery, the ARIES algorithm operates in three phases:\n    - Analysis Phase (Source 2): Scans the log forward from the most recent checkpoint to reconstruct the Dirty Page Table (DPT) and Transaction Table (TT).\n    - Redo Phase: Replays all logged changes forward from the smallest RecLSN in the DPT to restore the database state to the exact instant of failure.\n    - Undo Phase: Scans backward from the crash point, reversing the modification keys. (Source 3)\n\nThis interaction ensures that WAL is implemented and used correctly within the ARIES recovery framework to guarantee durability and support system crash recovery.",
+      "is_refusal": false,
+      "expected_terms": [
+        "analysis",
+        "aries",
+        "redo",
+        "undo",
+        "wal"
+      ],
+      "preserved_terms": [
+        "analysis",
+        "aries",
+        "redo",
+        "undo",
+        "wal"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q056",
+      "category": "Multi-chunk",
+      "question": "Compare the indexing mechanisms of B+ Trees with LSM-Trees regarding write vs read optimization.",
+      "expected_answer": "B+ Trees optimize reads with 512 fanout and leaf linked lists but cause random writes; LSM-Trees optimize writes via sequential SSTables and MemTables, using Bloom filters for reads.",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that compares the indexing mechanisms of B+ Trees with LSM-Trees regarding write vs read optimization. However, it can be inferred from the provided references that:\n\n* B+ Trees and LSM-Trees are designed to handle high-throughput write workloads.\n* B+ Trees have a fanout structure for indexing, where each internal node has a limited number of keys (i.e., ceil(M/2) keys).\n* LSM-Trees have a log-structured approach, including:\n  - MemTable: an in-memory write buffer backed by a skip-list or red-black tree\n  - Commit Log: sequential write-ahead log for crash recovery\n\nThis suggests that both B+ Trees and LSM-Trees are optimized for high-throughput write workloads.",
+      "is_refusal": false,
+      "expected_terms": [
+        "512",
+        "bloom",
+        "lsm-trees",
+        "memtables",
+        "sstables",
+        "trees"
+      ],
+      "preserved_terms": [
+        "lsm-trees",
+        "trees"
+      ],
+      "term_preservation_rate": 0.33,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q057",
+      "category": "Multi-chunk",
+      "question": "How do MVCC tuple headers and autovacuum work together to maintain database performance?",
+      "expected_answer": "Tuple headers use xmin and xmax for snapshot visibility without locking; autovacuum cleans up dead tuples whose xmax is older than active snapshots.",
+      "should_reject": false,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c11"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c12"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+        }
+      ],
+      "generated_answer": "The tuple headers in PostgreSQL contain xmin (transaction ID that created the tuple) and xmax (transaction ID that deleted or updated the tuple, initially set to 0).",
+      "is_refusal": false,
+      "expected_terms": [
+        "tuple"
+      ],
+      "preserved_terms": [
+        "tuple"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q058",
+      "category": "Multi-chunk",
+      "question": "Describe how Raft consensus and Two-Phase Commit operate together in a distributed partitioned database.",
+      "expected_answer": "Raft replicates logs across nodes within a partition quorum, while Two-Phase Commit ensures atomic multi-partition transactions across clusters via prepare and commit phases.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c13"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c15"
+        },
+        {
+          "source_id": 4,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+        }
+      ],
+      "generated_answer": "Raft consensus and Two-Phase Commit operate together in a distributed partitioned database by ensuring consistency across the network. According to the reference material, Consistent Hashing is used to map physical nodes to virtual nodes (vnodes) across a ring, which helps with uniform data distribution.\n\nConsistent Hashing ensures that each physical server is mapped to 256 vnodes across the ring, and Raft's Quorum Invariant ensures that a leader becomes the majority of votes required for replication (Quorum = floor(N/2) + 1, where N is the number of nodes).\n\nWhen it comes to distributed transactions (Two-Phase Commit - 2PC), Two-Phase Locking (2PL) and Deadlock Handling are used. Strict Two-Phase Locking guarantees serializability through Phase 1 (Prepare) and ensures that a transaction acquires locks during its Growing Phase, allowing for exclusive access to shared locks (S-Locks) in Phase 2 (Shrink).\n\nThere is no direct or sufficient evidence provided in the reference material stating how Raft consensus and Two-Phase Commit operate together.",
+      "is_refusal": false,
+      "expected_terms": [
+        "commit",
+        "raft",
+        "two-phase"
+      ],
+      "preserved_terms": [
+        "commit",
+        "raft",
+        "two-phase"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q071",
+      "category": "Cross-document",
+      "question": "Compare the concurrency mechanisms: how does Python's GIL mutex compare to Database Strict 2PL locking?",
+      "expected_answer": "Python's GIL is a single mutex serializing VM bytecode execution across threads, while Strict 2PL uses granular shared/exclusive locks on tuples to ensure serializable transactions.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c9"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+        },
+        {
+          "source_id": 3,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c11"
+        },
+        {
+          "source_id": 4,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+        }
+      ],
+      "generated_answer": "The direct factual statements regarding concurrency mechanisms are:\n\n1. Python's Global Interpreter Lock (GIL) prevents multiple native OS threads from executing CPython bytecode simultaneously.\n2. Database Strict 2PL locking uses two phases: Growing and Shrinking, with shared locks required for read operations.\n\nThese statements provide a clear comparison of concurrency mechanisms between Python and Database Strict 2PL locking.",
+      "is_refusal": false,
+      "expected_terms": [
+        "gil",
+        "python",
+        "strict"
+      ],
+      "preserved_terms": [
+        "gil",
+        "python",
+        "strict"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q072",
+      "category": "Cross-document",
+      "question": "How does Celery asynchronous queueing in KnowledgeTrace MCQ implement the Microservices decoupling principle?",
+      "expected_answer": "It offloads heavy psychometric computations to background Celery workers so HTTP requests return in under 15ms, adhering to non-blocking service communication.",
+      "should_reject": false,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34"
+        }
+      ],
+      "generated_answer": "Celery asynchronous queueing in KnowledgeTrace MCQ implements the Microservices decoupling principle by allowing different services (microservices) to communicate with each other without being tightly coupled, thus reducing coupling between services.",
+      "is_refusal": false,
+      "expected_terms": [
+        "15ms",
+        "celery",
+        "http"
+      ],
+      "preserved_terms": [
+        "celery"
+      ],
+      "term_preservation_rate": 0.33,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q073",
+      "category": "Cross-document",
+      "question": "Contrast the memory management of CPython's PyMalloc pools with Database buffer pool page frames.",
+      "expected_answer": "PyMalloc manages small CPU memory allocations up to 512 bytes in 4KB pools, while DB buffer pools manage 8KB/16KB disk page frames using CLOCK-Pro eviction.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+        },
+        {
+          "source_id": 2,
+          "filename": "python_runtime_internals.pdf",
+          "page": 2,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c5"
+        },
+        {
+          "source_id": 3,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+        },
+        {
+          "source_id": 4,
+          "filename": "python_runtime_internals.pdf",
+          "page": 2,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that compares the memory management of CPython's PyMalloc pools with Database buffer pool page frames in a straightforward manner. However, I can provide some indirect information based on the reference material.\n\nAccording to Source 4, Layer 2 (PyMalloc Object Allocator) for PyMalloc pools uses arenas and pools to manage small objects. Arenas are 256 KB aligned memory segments allocated from the OS, while pools are 4 KB subdivisions within an arena, each dedicated to a single fixed size-class. Blocks are the fundamental allocation units carved out of pools.\n\nIt's not explicitly stated that PyMalloc pools use database buffer pool page frames as their underlying memory management mechanism. However, it can be inferred that PyMalloc pools likely use some form of in-memory caching and heap management similar to database buffer pool page frames, given their use of arenas and pools for managing small objects.\n\nTherefore, I will state: There is indirect evidence suggesting that PyMalloc pools may employ a similar memory management approach as database buffer pool page frames, but this is not explicitly stated.",
+      "is_refusal": false,
+      "expected_terms": [
+        "16kb",
+        "4kb",
+        "512",
+        "8kb",
+        "clock-pro",
+        "cpu",
+        "pymalloc"
+      ],
+      "preserved_terms": [
+        "pymalloc"
+      ],
+      "term_preservation_rate": 0.14,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q074",
+      "category": "Cross-document",
+      "question": "How does TCP packet encapsulation overhead compare to the W3C TraceContext traceparent HTTP header overhead?",
+      "expected_answer": "TCP encapsulation adds 54 bytes at layers 2-4, while W3C TraceContext adds an application header containing a 16-byte trace-id and 8-byte parent-id.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 1,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c3"
+        },
+        {
+          "source_id": 2,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 1,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c2"
+        },
+        {
+          "source_id": 3,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 1,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c1"
+        },
+        {
+          "source_id": 4,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 4,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14"
+        }
+      ],
+      "generated_answer": "The direct factual statement that answers the question is:\n\n\"The Total Baseline Header consists of 54 bytes, which includes IP and TCP headers.\"\n\nThis statement can be verified by checking the provided text: \"Total Baseline Header: 14 + 20 + 20 = 54 bytes of encapsulation overhead.\"",
+      "is_refusal": false,
+      "expected_terms": [
+        "16",
+        "2",
+        "4",
+        "54",
+        "8",
+        "tcp",
+        "tracecontext",
+        "w3c"
+      ],
+      "preserved_terms": [
+        "2",
+        "4",
+        "54",
+        "tcp"
+      ],
+      "term_preservation_rate": 0.5,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q075",
+      "category": "Cross-document",
+      "question": "Compare the failure recovery of Database ARIES WAL logging with Microservices Saga compensating transactions.",
+      "expected_answer": "ARIES WAL replays physical page history (Redo) and rolls back active transactions (Undo) on a single node, while Sagas execute semantic compensating business actions across distributed services.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2"
+        },
+        {
+          "source_id": 2,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 2,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c4"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 1,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c3"
+        },
+        {
+          "source_id": 4,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 2,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c5"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that compares the failure recovery of Database ARIES WAL logging with Microservices Saga compensating transactions. The reference material only provides general information about the differences between ARIES WAL logging and Saga pattern for distributed transactions, but does not discuss specific features or mechanisms related to failure recovery.\n\nThe text mentions the following points:\n\n* ARIES WAL logging is a protocol that guarantees durability (Durability) through write-ahead logging.\n* The ARIES recovery algorithm operates in three distinct phases: Analysis Phase, Redo Phase, and Undo Phase.\n* Saga pattern coordinates long-running business workflows as a sequence of local transactions.\n\nHowever, there is no mention of failure recovery mechanisms or specific approaches for handling system crashes.",
+      "is_refusal": false,
+      "expected_terms": [
+        "aries",
+        "redo",
+        "sagas",
+        "undo",
+        "wal"
+      ],
+      "preserved_terms": [
+        "aries",
+        "redo",
+        "undo",
+        "wal"
+      ],
+      "term_preservation_rate": 0.8,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q076",
+      "category": "Cross-document",
+      "question": "Contrast B+ Tree leaf linked lists in database engines with Python generator resumable frame states.",
+      "expected_answer": "B+ Tree leaf lists link disk pages bidirectionally for sequential storage access, while Python generators maintain execution frames on the heap to resume state upon next().",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+        }
+      ],
+      "generated_answer": "The question is asking for a contrast between B+ Tree leaf linked lists in database engines and Python generator resumable frame states.\n\nA direct factual statement that contrasts the two data structures is:\n\nPython generator resumable frame states do not have a clear equivalent to the fanout of an internal node in a B+ Tree, as they are designed for I/O optimization rather than search performance.",
+      "is_refusal": false,
+      "expected_terms": [
+        "python",
+        "tree"
+      ],
+      "preserved_terms": [
+        "python",
+        "tree"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q077",
+      "category": "Cross-document",
+      "question": "How does network socket I/O multiplexing in CPython asyncio connect to TCP sliding window buffer availability?",
+      "expected_answer": "The asyncio event loop uses OS epoll/IOCP to detect when a socket is ready for reading/writing, matching the TCP receiver's advertised rcv_wnd window space.",
+      "should_reject": false,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+        },
+        {
+          "source_id": 2,
+          "filename": "python_runtime_internals.pdf",
+          "page": 4,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c16"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that explicitly answers how network socket I/O multiplexing in CPython asyncio connects to TCP sliding window buffer availability. The reference material does not mention a connection between the two concepts.\n\nHowever, based on the information provided, it can be inferred that TCP sliding window buffering is an OS-specific mechanism used for I/O non-blocking behavior (Source 1). Asyncio's use of task objects and I/O demultiplexing (Source 2) could potentially improve performance by taking advantage of existing OS mechanisms like TCP sliding window buffering.",
+      "is_refusal": true,
+      "expected_terms": [
+        "iocp",
+        "tcp",
+        "the"
+      ],
+      "preserved_terms": [
+        "tcp",
+        "the"
+      ],
+      "term_preservation_rate": 0.67,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q078",
+      "category": "Cross-document",
+      "question": "Compare the distributed consensus of Raft with the Two-Phase Commit protocol for cross-partition transactions.",
+      "expected_answer": "Raft achieves consensus within a single replica group using a majority quorum, whereas 2PC coordinates atomic execution across distinct partitions requiring unanimous agreement.",
+      "should_reject": false,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c13"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c15"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14"
+        },
+        {
+          "source_id": 4,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that compares the distributed consensus of Raft with the Two-Phase Commit protocol for cross-partition transactions. \n\nThe reference material does not provide information on how to compare or contrast these two protocols in this specific context. However, it does discuss related concepts such as partitioning, quorum requirements and voting mechanisms, which may be relevant but do not directly answer the question.\n\nTherefore, I cannot provide a concise answer based on the provided evidence.",
+      "is_refusal": true,
+      "expected_terms": [
+        "raft"
+      ],
+      "preserved_terms": [
+        "raft"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q126",
+      "category": "Hard Negative",
+      "question": "What is the SHA-512 hashing algorithm used by B+ Trees to sort leaf node keys?",
+      "expected_answer": "B+ trees do not use SHA-512 hashing; they store sorted search keys.",
+      "should_reject": true,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 2,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that answers the question regarding the SHA-512 hashing algorithm used by B+ Trees to sort leaf node keys. The provided reference material does not mention a specific algorithm or technique related to hashing in B+ Trees.\n\nHowever, it does discuss B+ Tree internal structure and fanout, which may be relevant to understanding how leaf nodes are sorted and accessed.\n\nIt's worth noting that the question appears to be an attempt to trick the user into providing incorrect information. The correct answer is likely to be \"There is no direct factual statement\" or \"No specific algorithm mentioned\".",
+      "is_refusal": true,
+      "expected_terms": [
+        "512",
+        "sha-512"
+      ],
+      "preserved_terms": [
+        "512",
+        "sha-512"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q127",
+      "category": "Hard Negative",
+      "question": "What is the Paxos leader lease timeout parameter configured in ARIES logging?",
+      "expected_answer": "ARIES is a local crash recovery algorithm, not Paxos leader leasing.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "aries",
+        "paxos"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q128",
+      "category": "Hard Negative",
+      "question": "What is the SQLite WAL checkpoint command executed inside PostgreSQL autovacuum daemon?",
+      "expected_answer": "PostgreSQL autovacuum does not execute SQLite commands.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 2,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c7"
+        }
+      ],
+      "generated_answer": "The SQLite WAL checkpoint command executed inside PostgreSQL autovacuum daemon is not a direct factual statement from the provided reference material. The text does mention that PostgreSQL has a background relay engine called Debezium which streams outbox records to Kafka for CDC (Change Data Capture), but it does not specify how this process is implemented, including the specific command used by the autovacuum daemon.\n\nThere is no direct or sufficient evidence provided in the reference material to state the exact SQLite WAL checkpoint command executed inside PostgreSQL autovacuum daemon.",
+      "is_refusal": false,
+      "expected_terms": [
+        "postgresql",
+        "sqlite"
+      ],
+      "preserved_terms": [
+        "postgresql",
+        "sqlite"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q129",
+      "category": "Hard Negative",
+      "question": "What is the RSA-4096 asymmetric encryption key size required in the IPv4 baseline header?",
+      "expected_answer": "IPv4 baseline headers do not contain RSA asymmetric encryption keys.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 1,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c2"
+        }
+      ],
+      "generated_answer": "According to the reference material, the total baseline header (including IPv4 header) has a minimum size of 54 bytes. The question asks for the RSA-4096 asymmetric encryption key size required in this setup. There is no direct or sufficient evidence provided in the reference material that mentions the specific key size for RSA-4096 within the 54-byte minimum baseline header.",
+      "is_refusal": false,
+      "expected_terms": [
+        "ipv4",
+        "rsa"
+      ],
+      "preserved_terms": [
+        "ipv4",
+        "rsa"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q130",
+      "category": "Hard Negative",
+      "question": "What is the UDP 3-way handshake sequence number negotiation procedure?",
+      "expected_answer": "UDP is connectionless and does not have a 3-way handshake or sequence numbers.",
+      "should_reject": true,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 2,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c4"
+        },
+        {
+          "source_id": 2,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 2,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c5"
+        },
+        {
+          "source_id": 3,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 4,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c15"
+        }
+      ],
+      "generated_answer": "The direct factual statement that answers the question is:\n\n\"Step 2 (SYN-ACK): The server allocates connection transmission control blocks (TCBs), generates its own sequence number ISN_s, and replies with SYN and ACK flags set: Seq = ISN_s, Ack = ISN_c + 1.\"\n\nThis is a clear and concise statement that describes the process of the UDP 3-way handshake sequence number negotiation procedure.",
+      "is_refusal": false,
+      "expected_terms": [
+        "3",
+        "udp"
+      ],
+      "preserved_terms": [
+        "3",
+        "udp"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q131",
+      "category": "Hard Negative",
+      "question": "What is the BGP autonomous system path prepend formula used in HTTP/3 QUIC streams?",
+      "expected_answer": "QUIC streams do not use BGP AS path prepending.",
+      "should_reject": true,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 4,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c14"
+        },
+        {
+          "source_id": 2,
+          "filename": "computer_networks_protocols.pdf",
+          "page": 4,
+          "chunk_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c15"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that answers the question regarding the BGP autonomous system path prepend formula used in HTTP/3 QUIC streams. The provided reference material only discusses the protocol changes and mechanics of HTTP/2, HTTP/3 over QUIC, but does not mention a specific BGP autonomous system (AS) path prepend formula for QUIC.\n\nTherefore, I must conclude that there is insufficient or indirect evidence to provide an answer to this question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "bgp",
+        "quic"
+      ],
+      "preserved_terms": [
+        "bgp",
+        "quic"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q132",
+      "category": "Hard Negative",
+      "question": "What is the LLVM JIT compilation threshold used by the CPython PEG parser?",
+      "expected_answer": "CPython's PEG parser generates ASTs and does not compile via LLVM JIT.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "python_runtime_internals.pdf",
+          "page": 1,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c0"
+        }
+      ],
+      "generated_answer": "The LLVM JIT compilation threshold used by the CPython PEG parser is not explicitly stated in the reference material provided. \n\nHowever, a direct factual statement stating that \"No specific threshold value was mentioned in [Source 1: python_runtime_internals.pdf, page 1]\" can be found.\n\nTherefore, I will provide an answer based on this factual statement:\n\nThere is no explicit information regarding the LLVM JIT compilation threshold used by the CPython PEG parser.",
+      "is_refusal": false,
+      "expected_terms": [
+        "asts",
+        "cpython",
+        "jit",
+        "llvm",
+        "peg"
+      ],
+      "preserved_terms": [
+        "cpython",
+        "jit",
+        "llvm",
+        "peg"
+      ],
+      "term_preservation_rate": 0.8,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q133",
+      "category": "Hard Negative",
+      "question": "What is the mark-sweep compacting algorithm executed by PyMalloc pools?",
+      "expected_answer": "PyMalloc is a size-class allocator, not a mark-sweep compacting collector.",
+      "should_reject": true,
+      "retrieved_chunk_count": 2,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+        },
+        {
+          "source_id": 2,
+          "filename": "python_runtime_internals.pdf",
+          "page": 2,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6"
+        }
+      ],
+      "generated_answer": "The mark-sweep compacting algorithm is executed by PyMalloc pools, which use a combination of arena allocation, pool subdivision, and block carving to manage memory. \n\nAccording to [Source 1: python_runtime_internals.pdf, page 3], the GIL triggers catastrophic race conditions when concurrent modifications occur to ob_refcnt or PyMalloc memory pools.\n\nThe switching mechanism for cooperative multi-threading is implemented as follows:\n \nEvery Python object (PyObject) has an internal reference count (IRefCnt), which indicates how many times it's been referenced. If a thread attempts to acquire the GIL, it releases IRefCnt. However, if the thread acquires the GIL and doesn't release IRefCnt immediately, it can still trigger catastrophic race conditions.\n\nSource: [python_runtime_internals.pdf, page 3]",
+      "is_refusal": false,
+      "expected_terms": [
+        "pymalloc"
+      ],
+      "preserved_terms": [
+        "pymalloc"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q134",
+      "category": "Hard Negative",
+      "question": "What is the Java virtual machine thread group parameter used by Python asyncio tasks?",
+      "expected_answer": "Python asyncio does not run on the JVM or use Java thread groups.",
+      "should_reject": true,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "python_runtime_internals.pdf",
+          "page": 4,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13"
+        },
+        {
+          "source_id": 2,
+          "filename": "python_runtime_internals.pdf",
+          "page": 4,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c15"
+        },
+        {
+          "source_id": 3,
+          "filename": "python_runtime_internals.pdf",
+          "page": 4,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c16"
+        },
+        {
+          "source_id": 4,
+          "filename": "python_runtime_internals.pdf",
+          "page": 3,
+          "chunk_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c9"
+        }
+      ],
+      "generated_answer": "There is no direct factual statement that answers the question regarding the Java virtual machine thread group parameter used by Python asyncio tasks in the reference material provided.\n\nThe information provided only discusses the basics of Python's internal workings, including descriptors, async/await syntax, coroutine infrastructure, task objects, and concurrency mechanisms. However, it does not mention a specific parameter or setting that controls how many threads are used for asyncio tasks.",
+      "is_refusal": true,
+      "expected_terms": [
+        "java",
+        "jvm",
+        "python"
+      ],
+      "preserved_terms": [
+        "java",
+        "python"
+      ],
+      "term_preservation_rate": 0.67,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q135",
+      "category": "Hard Negative",
+      "question": "What is the two-phase commit protocol implemented inside AWS Full Jitter backoff?",
+      "expected_answer": "Full Jitter is a backoff sleep algorithm, not two-phase commit.",
+      "should_reject": true,
+      "retrieved_chunk_count": 3,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 3,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10"
+        },
+        {
+          "source_id": 2,
+          "filename": "database_systems_architecture.pdf",
+          "page": 4,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c16"
+        },
+        {
+          "source_id": 3,
+          "filename": "database_systems_architecture.pdf",
+          "page": 3,
+          "chunk_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+        }
+      ],
+      "generated_answer": "The two-phase commit protocol is implemented inside AWS Full Jitter backoff.",
+      "is_refusal": false,
+      "expected_terms": [
+        "full",
+        "jitter"
+      ],
+      "preserved_terms": [
+        "full",
+        "jitter"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q136",
+      "category": "Hard Negative",
+      "question": "What is the Debezium Kafka connector port number defined in the 12-factor app manifesto?",
+      "expected_answer": "The 12-factor manifesto does not specify Debezium Kafka port numbers.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "software_engineering_microservices.pdf",
+          "page": 4,
+          "chunk_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c12"
+        }
+      ],
+      "generated_answer": "The Debezium Kafka connector port number is not defined in the reference material provided.",
+      "is_refusal": false,
+      "expected_terms": [
+        "12",
+        "debezium",
+        "kafka",
+        "the"
+      ],
+      "preserved_terms": [
+        "debezium",
+        "kafka",
+        "the"
+      ],
+      "term_preservation_rate": 0.75,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q137",
+      "category": "Hard Negative",
+      "question": "What is the Kubernetes ingress YAML specification for Blue-Green Saga orchestrators?",
+      "expected_answer": "The document discusses conceptual Blue-Green and Saga patterns, not Kubernetes YAML.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "blue-green",
+        "kubernetes",
+        "saga",
+        "the",
+        "yaml"
+      ],
+      "preserved_terms": [
+        "the"
+      ],
+      "term_preservation_rate": 0.2,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q138",
+      "category": "Hard Negative",
+      "question": "What is the Q-learning reinforcement learning discount factor gamma used in DINA Q-Matrix?",
+      "expected_answer": "DINA is a cognitive diagnosis model, not reinforcement learning with discount factor gamma.",
+      "should_reject": true,
+      "retrieved_chunk_count": 4,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 4,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+        },
+        {
+          "source_id": 2,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 6,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        },
+        {
+          "source_id": 3,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 1,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        },
+        {
+          "source_id": 4,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 5,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26"
+        }
+      ],
+      "generated_answer": "The Q-learning reinforcement learning discount factor gamma (\u03b3) used in DINA Q-Matrix is not directly stated in the reference material provided. However, it can be inferred from the context.\n\nAccording to Source 1:\n\n\"...the Q-Matrix: A binary table linking each question to the skills it requires: qjk = 1 if question j requires concept k, else 0.\"\n\nIt suggests that the values of \u03b1k (\u03b1 = (\u03b11, \u03b12, ..., \u03b1K)) represent the mastery status of each skill for a particular question, where \u03b1k \u2208 {0, 1}. This implies that Q-learning is used to update the mastery status of skills based on feedback from the student.\n\nSource 3:\n\n\"...compute_bkt_sequence() is called by compute_block_exact(), which performs KnowledgeTrace MCQ \u2014 AI & Psychometrics Architecture Guide\nPage 1 of 6\"\n\nThis suggests that the Q-Matrix is used as input to the Knowledge Trace (KT) module, which is responsible for generating questions and tracking student progress.\n\nTherefore, it can be inferred that \u03b3 is a key component in updating the mastery status of skills using the Q-learning algorithm, and is likely defined in the knowledge trace or other modules involved in the DINA Q-Matrix.",
+      "is_refusal": false,
+      "expected_terms": [
+        "dina"
+      ],
+      "preserved_terms": [
+        "dina"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q139",
+      "category": "Hard Negative",
+      "question": "What is the Adam optimizer learning rate used to fit BKT parameters in PyBKT?",
+      "expected_answer": "PyBKT parameter learning rates are not specified in the document.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 2,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        }
+      ],
+      "generated_answer": "The Adam optimizer learning rate used to fit BKT parameters in PyBKT is not stated directly in the provided reference material. \n\nWhile machine learning algorithms typically use an Adam optimizer with a default learning rate, there is no mention of the specific learning rate or how it is determined for PyBKT.",
+      "is_refusal": false,
+      "expected_terms": [
+        "pybkt"
+      ],
+      "preserved_terms": [
+        "pybkt"
+      ],
+      "term_preservation_rate": 1.0,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q140",
+      "category": "Hard Negative",
+      "question": "What is the Dirichlet prior distribution parameter alpha applied to HMM in KnowledgeTrace MCQ?",
+      "expected_answer": "The document uses fixed BKT priors P(L0)=0.2, not a Dirichlet alpha parameter.",
+      "should_reject": true,
+      "retrieved_chunk_count": 1,
+      "sources": [
+        {
+          "source_id": 1,
+          "filename": "machine_learning_algorithms.pdf",
+          "page": 3,
+          "chunk_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        }
+      ],
+      "generated_answer": "The Dirichlet prior distribution parameter alpha applied to HMM in KnowledgeTrace MCQ is 1.",
+      "is_refusal": false,
+      "expected_terms": [
+        "0.2",
+        "bkt",
+        "dirichlet",
+        "the"
+      ],
+      "preserved_terms": [
+        "dirichlet",
+        "the"
+      ],
+      "term_preservation_rate": 0.5,
+      "has_citations": false
+    },
+    {
+      "question_id": "md_q141",
+      "category": "Unsupported",
+      "question": "What is the chemical reaction mechanism of photosynthesis in C4 plants?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q142",
+      "category": "Unsupported",
+      "question": "What is the optimal baking temperature and kneading technique for sourdough bread?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q143",
+      "category": "Unsupported",
+      "question": "Who won the 1994 FIFA World Cup and what was the final score in the penalty shootout?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q144",
+      "category": "Unsupported",
+      "question": "What are the treatment guidelines for pediatric asthma according to the GINA report?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q145",
+      "category": "Unsupported",
+      "question": "How does quantum superposition collapse during a Bell test measurement?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q146",
+      "category": "Unsupported",
+      "question": "What is the capital city of Madagascar and what currency is used there?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q147",
+      "category": "Unsupported",
+      "question": "What are the primary causes of the French Revolution in 1789?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q148",
+      "category": "Unsupported",
+      "question": "How do airplane jet engines generate thrust using the Brayton thermodynamic cycle?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q149",
+      "category": "Unsupported",
+      "question": "What is the standard tuning and string tension for a classical concert harp?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q150",
+      "category": "Unsupported",
+      "question": "How does mRNA lipid nanoparticle delivery work in modern vaccines?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q151",
+      "category": "Unsupported",
+      "question": "What is the maximum diving depth and pressure limit for a Sperm Whale?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q152",
+      "category": "Unsupported",
+      "question": "What are the architectural orders of ancient Greek temples: Doric, Ionic, and Corinthian?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q153",
+      "category": "Unsupported",
+      "question": "How do seismologists calculate earthquake magnitude using the moment magnitude scale (Mw)?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q154",
+      "category": "Unsupported",
+      "question": "What is the recipe for preparing authentic Neapolitan pizza dough according to AVPN regulations?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    },
+    {
+      "question_id": "md_q155",
+      "category": "Unsupported",
+      "question": "What is the orbital period and perihelion distance of Halley's Comet?",
+      "expected_answer": "Information not provided in the document corpus.",
+      "should_reject": true,
+      "retrieved_chunk_count": 0,
+      "sources": [],
+      "generated_answer": "I could not find enough evidence in the indexed documents to answer that question.",
+      "is_refusal": true,
+      "expected_terms": [
+        "information"
+      ],
+      "preserved_terms": [],
+      "term_preservation_rate": 0.0,
+      "has_citations": true
+    }
+  ]
+}

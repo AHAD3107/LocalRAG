@@ -1,0 +1,34 @@
+{
+  "ingestion": {
+    "document_id": "5a91ca7cc49b6c5c37d79ce164e40ee0e112118759da65257b53c1b7e69bccfd",
+    "filename": "project_specification.pdf",
+    "extracted_pages": 3,
+    "chunks": 3
+  },
+  "supported_query": {
+    "question": "When is the project deadline?",
+    "answer": "The direct factual statement that answers the question is:\n\n\"The project deadline is 25 October 2026.\"\n\nThis information can be found in the reference material provided.",
+    "top_source_filename": "project_specification.pdf",
+    "top_source_page": 2,
+    "top_source_score": 0.7048830986022949
+  },
+  "unsupported_query": {
+    "question": "Who is the project manager?",
+    "answer": "I could not find enough evidence in the indexed documents to answer that question.",
+    "sources_count": 0,
+    "safely_handled": true
+  },
+  "persistence": {
+    "reloaded_chunks": 3,
+    "reloaded_vectors_shape": [
+      3,
+      768
+    ],
+    "answer_after_restart": "The direct factual statement that answers the question is:\n\n\"The project deadline is 25 October 2026.\"\n\nThis information is explicitly stated in the reference material provided.\n\nThere is no sufficient evidence to answer the question, which asks for the \"project deadline.\" The only relevant piece of information is the explicit mention of the deadline on page 2 of the [Source 1] document."
+  },
+  "deletion": {
+    "removed_chunks": 3,
+    "index_chunks_after_delete": 0,
+    "sources_after_delete": 0
+  }
+}

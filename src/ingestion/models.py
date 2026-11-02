@@ -248,10 +248,14 @@ class IngestionResult:
     @property
     def is_usable(self) -> bool:
         """
-        True if ingestion produced usable content (SUCCESS or PARTIAL with chunks).
-        A document with some empty pages is still usable if other pages produced chunks.
+        True if ingestion produced extractable content.
+
+        Extraction results contain pages and are chunked by the orchestration
+        layer later, so requiring chunks here would reject every valid upload.
+        A result with some empty pages is usable when another page has text.
         """
-        return self.status in (IngestionStatus.SUCCESS, IngestionStatus.PARTIAL) and len(self.chunks) > 0
+        has_content = bool(self.chunks) or any(page.has_text for page in self.pages)
+        return self.status in (IngestionStatus.SUCCESS, IngestionStatus.PARTIAL) and has_content
 
     @property
     def extracted_chunks(self) -> list[Chunk]:

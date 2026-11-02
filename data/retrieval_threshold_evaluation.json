@@ -1,0 +1,301 @@
+{
+  "summary": [
+    {
+      "threshold": 0.3,
+      "tp": 7,
+      "fp": 53,
+      "fn": 0,
+      "tn": 0,
+      "precision": 0.1167,
+      "recall": 1.0,
+      "f1": 0.209
+    },
+    {
+      "threshold": 0.35,
+      "tp": 7,
+      "fp": 52,
+      "fn": 0,
+      "tn": 1,
+      "precision": 0.1186,
+      "recall": 1.0,
+      "f1": 0.2121
+    },
+    {
+      "threshold": 0.4,
+      "tp": 7,
+      "fp": 48,
+      "fn": 0,
+      "tn": 5,
+      "precision": 0.1273,
+      "recall": 1.0,
+      "f1": 0.2258
+    },
+    {
+      "threshold": 0.45,
+      "tp": 7,
+      "fp": 29,
+      "fn": 0,
+      "tn": 24,
+      "precision": 0.1944,
+      "recall": 1.0,
+      "f1": 0.3256
+    },
+    {
+      "threshold": 0.5,
+      "tp": 7,
+      "fp": 14,
+      "fn": 0,
+      "tn": 39,
+      "precision": 0.3333,
+      "recall": 1.0,
+      "f1": 0.5
+    },
+    {
+      "threshold": 0.55,
+      "tp": 6,
+      "fp": 3,
+      "fn": 1,
+      "tn": 50,
+      "precision": 0.6667,
+      "recall": 0.8571,
+      "f1": 0.75
+    },
+    {
+      "threshold": 0.6,
+      "tp": 6,
+      "fp": 2,
+      "fn": 1,
+      "tn": 51,
+      "precision": 0.75,
+      "recall": 0.8571,
+      "f1": 0.8
+    },
+    {
+      "threshold": 0.65,
+      "tp": 5,
+      "fp": 0,
+      "fn": 2,
+      "tn": 53,
+      "precision": 1.0,
+      "recall": 0.7143,
+      "f1": 0.8333
+    },
+    {
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6,
+      "tn": 53,
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25
+    }
+  ],
+  "queries": [
+    {
+      "category": "Exact-match",
+      "query": "When is the project deadline?",
+      "expected": [
+        "chunk_2"
+      ],
+      "scores": {
+        "chunk_2": 0.6824,
+        "chunk_1": 0.4851,
+        "chunk_5": 0.4503,
+        "chunk_3": 0.4349,
+        "chunk_4": 0.4218
+      },
+      "top_match": [
+        "chunk_2",
+        0.6824
+      ]
+    },
+    {
+      "category": "Exact-match",
+      "query": "What is the project name and purpose?",
+      "expected": [
+        "chunk_1"
+      ],
+      "scores": {
+        "chunk_1": 0.6673,
+        "chunk_2": 0.4912,
+        "chunk_5": 0.4704,
+        "chunk_4": 0.4504,
+        "chunk_3": 0.4242
+      },
+      "top_match": [
+        "chunk_1",
+        0.6673
+      ]
+    },
+    {
+      "category": "Paraphrased",
+      "query": "By which date does this system need to be completed?",
+      "expected": [
+        "chunk_2"
+      ],
+      "scores": {
+        "chunk_2": 0.6799,
+        "chunk_5": 0.5003,
+        "chunk_3": 0.4844,
+        "chunk_4": 0.4646,
+        "chunk_1": 0.4445
+      },
+      "top_match": [
+        "chunk_2",
+        0.6799
+      ]
+    },
+    {
+      "category": "Paraphrased",
+      "query": "What offline technology does this tool provide?",
+      "expected": [
+        "chunk_1"
+      ],
+      "scores": {
+        "chunk_5": 0.6053,
+        "chunk_3": 0.5095,
+        "chunk_1": 0.5091,
+        "chunk_2": 0.4788,
+        "chunk_4": 0.4559
+      },
+      "top_match": [
+        "chunk_5",
+        0.6053
+      ]
+    },
+    {
+      "category": "Paraphrased",
+      "query": "Which AI models are used for vector representation and chat answers?",
+      "expected": [
+        "chunk_3"
+      ],
+      "scores": {
+        "chunk_3": 0.7344,
+        "chunk_1": 0.5219,
+        "chunk_4": 0.4985,
+        "chunk_5": 0.4467,
+        "chunk_2": 0.443
+      },
+      "top_match": [
+        "chunk_3",
+        0.7344
+      ]
+    },
+    {
+      "category": "Multi-chunk",
+      "query": "What backend framework and local AI models are used in LocalRAG?",
+      "expected": [
+        "chunk_3",
+        "chunk_2"
+      ],
+      "scores": {
+        "chunk_2": 0.6803,
+        "chunk_3": 0.6056,
+        "chunk_5": 0.5442,
+        "chunk_4": 0.5029,
+        "chunk_1": 0.4909
+      },
+      "top_match": [
+        "chunk_2",
+        0.6803
+      ]
+    },
+    {
+      "category": "Unsupported",
+      "query": "Who is the lead project manager and architect?",
+      "expected": [],
+      "scores": {
+        "chunk_2": 0.5031,
+        "chunk_1": 0.453,
+        "chunk_5": 0.4297,
+        "chunk_4": 0.4242,
+        "chunk_3": 0.4206
+      },
+      "top_match": [
+        "chunk_2",
+        0.5031
+      ]
+    },
+    {
+      "category": "Unsupported",
+      "query": "What is the current weather in Tokyo?",
+      "expected": [],
+      "scores": {
+        "chunk_2": 0.5164,
+        "chunk_3": 0.4478,
+        "chunk_4": 0.4476,
+        "chunk_1": 0.4312,
+        "chunk_5": 0.4226
+      },
+      "top_match": [
+        "chunk_2",
+        0.5164
+      ]
+    },
+    {
+      "category": "Unsupported",
+      "query": "How much venture capital funding was raised?",
+      "expected": [],
+      "scores": {
+        "chunk_2": 0.4213,
+        "chunk_3": 0.4058,
+        "chunk_1": 0.3736,
+        "chunk_5": 0.3668,
+        "chunk_4": 0.3325
+      },
+      "top_match": [
+        "chunk_2",
+        0.4213
+      ]
+    },
+    {
+      "category": "Hard Negative",
+      "query": "What is the deadline for filing corporate taxes?",
+      "expected": [],
+      "scores": {
+        "chunk_2": 0.6081,
+        "chunk_5": 0.4263,
+        "chunk_1": 0.4166,
+        "chunk_4": 0.3951,
+        "chunk_3": 0.3892
+      },
+      "top_match": [
+        "chunk_2",
+        0.6081
+      ]
+    },
+    {
+      "category": "Hard Negative",
+      "query": "Which AWS cloud provider hosts serverless Lambda functions?",
+      "expected": [],
+      "scores": {
+        "chunk_5": 0.566,
+        "chunk_2": 0.4916,
+        "chunk_3": 0.4512,
+        "chunk_4": 0.4323,
+        "chunk_1": 0.4078
+      },
+      "top_match": [
+        "chunk_5",
+        0.566
+      ]
+    },
+    {
+      "category": "Hard Negative",
+      "query": "How do I configure my OpenAI GPT-4 API key in the cloud?",
+      "expected": [],
+      "scores": {
+        "chunk_5": 0.5466,
+        "chunk_4": 0.5191,
+        "chunk_2": 0.5138,
+        "chunk_1": 0.5041,
+        "chunk_3": 0.488
+      },
+      "top_match": [
+        "chunk_5",
+        0.5466
+      ]
+    }
+  ]
+}

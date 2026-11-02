@@ -1,0 +1,1205 @@
+[
+  {
+    "question_id": "q001",
+    "question": "What is the target system name described in the psychometrics specification?",
+    "category": "Exact-match",
+    "expected_answer": "KnowledgeTrace MCQ",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q002",
+    "question": "What is the target inference speed for KnowledgeTrace MCQ?",
+    "category": "Exact-match",
+    "expected_answer": "< 15ms (NumPy Vectorized)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q003",
+    "question": "Which graph validation library and structure is used in KnowledgeTrace MCQ?",
+    "category": "Exact-match",
+    "expected_answer": "NetworkX Poset DAG",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q004",
+    "question": "What is the probability of a student guessing correctly in a 4-choice question without knowing the answer?",
+    "category": "Exact-match",
+    "expected_answer": "25% chance of guessing correctly",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q005",
+    "question": "What are the two possible mental states modeled in Bayesian Knowledge Tracing?",
+    "category": "Exact-match",
+    "expected_answer": "0 = Unmastered and 1 = Mastered",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q006",
+    "question": "What is the default value for Prior Knowledge P(L0) in BKT?",
+    "category": "Exact-match",
+    "expected_answer": "0.20 (20%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q007",
+    "question": "What is the default value for Learning Transition P(T) in BKT?",
+    "category": "Exact-match",
+    "expected_answer": "0.15 (15%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q008",
+    "question": "What is the default value for Careless Slip P(S) in BKT?",
+    "category": "Exact-match",
+    "expected_answer": "0.10 (10%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q009",
+    "question": "What is the default value for Lucky Guess P(G) in BKT?",
+    "category": "Exact-match",
+    "expected_answer": "0.25 (25%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q010",
+    "question": "What is the latent learning transition formula used in Step 2 of BKT?",
+    "category": "Exact-match",
+    "expected_answer": "P(Lt+1) = P(Lt | obs) + [ 1 \u2212 P(Lt | obs) ] \u00d7 P(T)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q011",
+    "question": "Who formalized the DINA model and in which year?",
+    "category": "Exact-match",
+    "expected_answer": "Junker & Sijtsma (2001)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q012",
+    "question": "What does the binary Q-matrix represent in DINA?",
+    "category": "Exact-match",
+    "expected_answer": "A binary table linking each question to the skills it requires: qjk = 1 if question j requires concept k, else 0",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q013",
+    "question": "If a student possesses all required skills in DINA, what is their probability of answering correctly?",
+    "category": "Exact-match",
+    "expected_answer": "P(Correct) = 1 \u2212 Slip = 1 \u2212 0.10 = 0.90 (90%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q014",
+    "question": "If a student misses any required skill in DINA, what is their probability of answering correctly?",
+    "category": "Exact-match",
+    "expected_answer": "P(Correct) = Guess = 0.25 (25%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q015",
+    "question": "How many possible skill combinations exist if a curriculum has 30 skills?",
+    "category": "Exact-match",
+    "expected_answer": "2^30 = 1,073,741,824 possible skill combinations",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q016",
+    "question": "What is the maximum skill block size K for exact Bayesian posteriors before falling back?",
+    "category": "Exact-match",
+    "expected_answer": "K <= 12 (max 4,096 states)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q017",
+    "question": "What is the quadratic entropy confidence score equation used in dina_service.py?",
+    "category": "Exact-match",
+    "expected_answer": "Confidence = 1 \u2212 4 \u00d7 P \u00d7 (1 \u2212 P)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q018",
+    "question": "What confidence score is produced when probability P equals 0.50?",
+    "category": "Exact-match",
+    "expected_answer": "Confidence = 0.00 (0%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q019",
+    "question": "Which threshold flags a skill as a 'Likely Missing Prerequisite' in get_question_why?",
+    "category": "Exact-match",
+    "expected_answer": "mastery P < 0.50",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q020",
+    "question": "Which educational benchmark dataset originated from Worcester Polytechnic Institute (WPI)?",
+    "category": "Exact-match",
+    "expected_answer": "ASSISTments 2009-2010",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q021",
+    "question": "What software tool ensures prerequisite relationships do not form impossible loops?",
+    "category": "Paraphrased",
+    "expected_answer": "NetworkX is_directed_acyclic_graph() evaluates candidate edges to prevent cycles",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q022",
+    "question": "Why is basic arithmetic grading inadequate for measuring true student competency?",
+    "category": "Paraphrased",
+    "expected_answer": "It fails to capture guessing, careless slips, specific missing sub-skills, or mastery changes over time",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q023",
+    "question": "How does the system treat a learner's actual comprehension level in psychological modeling?",
+    "category": "Paraphrased",
+    "expected_answer": "As a hidden mental state statistically filtered between 0.0 and 1.0",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q024",
+    "question": "Which background worker mechanism prevents the user interface from freezing during Bayesian calculations?",
+    "category": "Paraphrased",
+    "expected_answer": "FastAPI BackgroundTasks triggers run_mastery_and_diagnosis() asynchronously",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q025",
+    "question": "Where are raw student submissions initially committed before AI processing?",
+    "category": "Paraphrased",
+    "expected_answer": "routers/student.py submit_response() logs raw responses into PostgreSQL synchronously",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q026",
+    "question": "What technique discovers candidate prerequisite pairs between curriculum topics?",
+    "category": "Paraphrased",
+    "expected_answer": "infer_llm_concept_edges() sends curriculum concepts to Groq LLaMA to propose directed pairs with confidence",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q027",
+    "question": "How does a student's mastery probability change after making an error in BKT?",
+    "category": "Paraphrased",
+    "expected_answer": "Posterior probability drops, then Step 2 adds latent transition probability P(T)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q028",
+    "question": "Can a student unlearn a concept once it has been mastered according to the BKT transition rules?",
+    "category": "Paraphrased",
+    "expected_answer": "No, once a student learns, they cannot unlearn",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q029",
+    "question": "What was the final updated mastery probability after four consecutive practice attempts in the example?",
+    "category": "Paraphrased",
+    "expected_answer": "0.8855 (> 88%), confirming high mastery",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q030",
+    "question": "What model handles questions that test several distinct subject areas at the same time?",
+    "category": "Paraphrased",
+    "expected_answer": "Layer 3 Multi-Attribute DINA Model using Q-Matrix logic",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q031",
+    "question": "What happens in DINA if a pupil lacks just a single prerequisite skill for a question?",
+    "category": "Paraphrased",
+    "expected_answer": "The conjunctive AND rule yields xi=0, dropping the student into the guess category (25% chance)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q032",
+    "question": "How does KnowledgeTrace MCQ circumvent exponential computational explosion for large skill sets?",
+    "category": "Paraphrased",
+    "expected_answer": "BFS Connected-Block Partitioning isolates connected skill blocks so only relevant skills are computed",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q033",
+    "question": "Under what conditions does the DINA service switch to a closed-form O(1) single-skill fallback?",
+    "category": "Paraphrased",
+    "expected_answer": "When a connected skill block exceeds 12 skills",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q034",
+    "question": "What are the three confidence categories used to rate diagnostic certainty?",
+    "category": "Paraphrased",
+    "expected_answer": "LOW (< 0.40), MEDIUM (0.40 to 0.75), and HIGH (>= 0.75)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q035",
+    "question": "What explanation does the diagnostic engine give instructors when a question is answered incorrectly?",
+    "category": "Paraphrased",
+    "expected_answer": "Flags required concepts with mastery P < 0.50 as a 'Likely Missing Prerequisite'",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q036",
+    "question": "What role does Layer 1 play relative to Layer 2 and Layer 3?",
+    "category": "Paraphrased",
+    "expected_answer": "Layer 1 builds the map by establishing topological prerequisite directions across curriculum topics",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q037",
+    "question": "Which database table stores the student mastery probabilities computed by BKT?",
+    "category": "Paraphrased",
+    "expected_answer": "student_concept_mastery",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q038",
+    "question": "Which database table records adjusted mastery and epistemic certainty from DINA?",
+    "category": "Paraphrased",
+    "expected_answer": "cognitive_diagnosis_profile",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q039",
+    "question": "Which large-scale dataset from Taiwan was used to validate concept prerequisite DAG sequencing?",
+    "category": "Paraphrased",
+    "expected_answer": "Junyi Academy dataset with 72,000+ students and 835 concept DAG",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q040",
+    "question": "Which psychometric benchmark established the 8 skill attributes for fraction subtraction?",
+    "category": "Paraphrased",
+    "expected_answer": "Tatsuoka Fraction Subtraction (1990 Rule Space)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q041",
+    "question": "How do Layer 1, Layer 2, and Layer 3 collaborate to guide student learning?",
+    "category": "Multi-chunk",
+    "expected_answer": "Layer 1 builds the prerequisite map, Layer 2 tracks sequential single-skill momentum via BKT, and Layer 3 performs multi-skill DINA diagnosis",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q042",
+    "question": "What are the core differences between BKT and DINA in handling single versus multi-skill questions?",
+    "category": "Multi-chunk",
+    "expected_answer": "BKT tracks sequential 0/1 mastery on single concepts; DINA uses binary vectors and a Q-matrix conjunctive AND rule for composite multi-skill problems",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q043",
+    "question": "What are the slip and guess parameter values used in both BKT and DINA?",
+    "category": "Multi-chunk",
+    "expected_answer": "Both models share P(Slip) = 0.10 (10%) and P(Guess) = 0.25 (25%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q044",
+    "question": "Explain the complete journey of an MCQ response from submission to database persistence across services.",
+    "category": "Multi-chunk",
+    "expected_answer": "React sends POST to FastAPI submit_response, logs to PostgreSQL, BackgroundTasks triggers BKT in mastery_service and DINA in dina_service, persisting to student_concept_mastery and cognitive_diagnosis_profile",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q045",
+    "question": "How does the system ensure fast execution at both the API layer and the mathematical model layer?",
+    "category": "Multi-chunk",
+    "expected_answer": "FastAPI uses non-blocking asynchronous background workers for immediate API responses, and DINA uses BFS partitioning with vectorized NumPy Log-Sum-Exp under 10ms",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q046",
+    "question": "What role does Groq LLaMA play in the concept graph, and how does NetworkX validate its output?",
+    "category": "Multi-chunk",
+    "expected_answer": "Groq LLaMA infers directed concept pairs with confidence, and NetworkX nx.is_directed_acyclic_graph(G) rejects any edge creating a cycle",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q047",
+    "question": "Compare the initial BKT prior probability with the probability after a first correct response in the student attempt example.",
+    "category": "Multi-chunk",
+    "expected_answer": "Initial prior starts at P(L0)=0.2000; after attempt 1 correct, Bayes posterior reaches 0.4737 and updated mastery reaches 0.5526",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q048",
+    "question": "How does the quadratic entropy confidence equation behave at maximum uncertainty versus strong mastery?",
+    "category": "Multi-chunk",
+    "expected_answer": "At P=0.50 (maximum uncertainty) confidence is 0.00; at P=0.85 (strong mastery) confidence rises to 0.49",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q049",
+    "question": "Which Python files implement the core algorithms for concept graphs, BKT estimation, and DINA diagnosis?",
+    "category": "Multi-chunk",
+    "expected_answer": "concept_graph.py (DAG check), mastery_service.py (compute_bkt_sequence), and dina_service.py (_compute_block_exact/update_diagnosis)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q050",
+    "question": "What database tables store the outputs of API ingestion, BKT estimation, and DINA diagnosis?",
+    "category": "Multi-chunk",
+    "expected_answer": "responses stores raw submissions, student_concept_mastery stores BKT probabilities, and cognitive_diagnosis_profile stores DINA adjusted mastery and confidence",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q051",
+    "question": "How does get_question_why utilize DINA mastery values to flag prerequisite gaps?",
+    "category": "Multi-chunk",
+    "expected_answer": "get_question_why retrieves skills required by the question and flags any skill with DINA mastery P < 0.50 as a Likely Missing Prerequisite",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q052",
+    "question": "What benchmark datasets validate BKT sequence modeling and DINA rule space models respectively?",
+    "category": "Multi-chunk",
+    "expected_answer": "ASSISTments 2009-2010 validates BKT sequence modeling, and Tatsuoka Fraction Subtraction validates Q-matrix DINA models",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q053",
+    "question": "Why does a circular loop break adaptive learning, and what algorithm checks for directed acyclic structure?",
+    "category": "Multi-chunk",
+    "expected_answer": "Circular prerequisites (A->B->C->A) create impossible deadlocks; nx.is_directed_acyclic_graph() evaluates candidate edges",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q054",
+    "question": "How does the system prevent UI lag during student submission while calculating Bayesian updates in the background?",
+    "category": "Multi-chunk",
+    "expected_answer": "submit_response immediately returns success after writing to PostgreSQL, and BackgroundTasks delegates compute_mastery_and_diagnosis to background execution",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q055",
+    "question": "Describe how BKT observation update and latent transition update operate sequentially.",
+    "category": "Multi-chunk",
+    "expected_answer": "Step 1 updates P(Lt) using Bayes rule based on observed correct/incorrect answer; Step 2 applies latent learning transition P(T) to produce P(Lt+1)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q056",
+    "question": "What transformer model architecture is used to generate BERT embeddings for student questions?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The document specifies Groq LLaMA for concept edge discovery; it never uses or describes BERT embeddings.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The document specifies Groq LLaMA for concept edge discovery; it never uses or describes BERT embeddings."
+  },
+  {
+    "question_id": "q057",
+    "question": "What is the SQL query to calculate a student's grade point average (GPA) in PostgreSQL?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The specification covers psychometric mastery tables (responses, student_concept_mastery); GPA calculations are completely absent.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The specification covers psychometric mastery tables (responses, student_concept_mastery); GPA calculations are completely absent."
+  },
+  {
+    "question_id": "q058",
+    "question": "Which Docker Compose port binds the external Redis caching cluster to host port 6379?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The document mentions Redis conceptually in notes but provides no Docker Compose port configuration.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The document mentions Redis conceptually in notes but provides no Docker Compose port configuration."
+  },
+  {
+    "question_id": "q059",
+    "question": "How does the webcam proctoring system detect student eye movements during MCQ exams?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: No webcam or automated video proctoring features exist in the system specification.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "No webcam or automated video proctoring features exist in the system specification."
+  },
+  {
+    "question_id": "q060",
+    "question": "What Stripe API webhook endpoint processes credit card payments for exam fees?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: No payment gateway, billing logic, or Stripe integrations exist in the document.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "No payment gateway, billing logic, or Stripe integrations exist in the document."
+  },
+  {
+    "question_id": "q061",
+    "question": "What is the SMTP server hostname and port for sending student password reset emails?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: No SMTP mail server configuration or password recovery services are documented.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "No SMTP mail server configuration or password recovery services are documented."
+  },
+  {
+    "question_id": "q062",
+    "question": "What fine-tuning hyperparameter settings were used for OpenAI GPT-4o?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The system uses Groq LLaMA for concept edges; OpenAI GPT-4o fine-tuning is not documented.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The system uses Groq LLaMA for concept edges; OpenAI GPT-4o fine-tuning is not documented."
+  },
+  {
+    "question_id": "q063",
+    "question": "How does the system calculate Pearson correlation between student exam scores and family income?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The document contains no socioeconomic demographic variables or Pearson correlation formulas.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The document contains no socioeconomic demographic variables or Pearson correlation formulas."
+  },
+  {
+    "question_id": "q064",
+    "question": "Which Kubernetes Helm chart deploys the Celery worker pods on AWS EKS?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: No Kubernetes, Helm charts, or AWS EKS infrastructure deployment specs are present.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "No Kubernetes, Helm charts, or AWS EKS infrastructure deployment specs are present."
+  },
+  {
+    "question_id": "q065",
+    "question": "What is the current outdoor weather temperature in London?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: Weather information is completely unrelated to the psychometrics specification.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "Weather information is completely unrelated to the psychometrics specification."
+  },
+  {
+    "question_id": "q066",
+    "question": "How many venture capital funding rounds has KnowledgeTrace MCQ raised?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: No corporate financial or venture capital information exists in the technical guide.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "No corporate financial or venture capital information exists in the technical guide."
+  },
+  {
+    "question_id": "q067",
+    "question": "What is the recommended dosage for pediatric ibuprofen?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: Medical pharmacology queries are completely outside the scope of this psychometric guide.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "Medical pharmacology queries are completely outside the scope of this psychometric guide."
+  },
+  {
+    "question_id": "q068",
+    "question": "Who was the lead architect who designed the Eiffel Tower in Paris?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: Historical architecture trivia is outside the scope of this document.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "Historical architecture trivia is outside the scope of this document."
+  },
+  {
+    "question_id": "q069",
+    "question": "What is the maximum upload file size for video recordings in the student dashboard?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: The system only handles text MCQ answer options, not video recording uploads.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "The system only handles text MCQ answer options, not video recording uploads."
+  },
+  {
+    "question_id": "q070",
+    "question": "What is the exchange rate between the Japanese Yen and the US Dollar today?",
+    "category": "Unsupported",
+    "expected_answer": "REJECT: Foreign currency exchange rates are completely outside the scope of this document.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "rejection_reason": "Foreign currency exchange rates are completely outside the scope of this document."
+  },
+  {
+    "question_id": "q071",
+    "question": "What is the NetworkX betweenness centrality algorithm used to rank concept importance in the Poset DAG?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares NetworkX, concept, and Poset DAG with chunks 0 and 12, but betweenness centrality is never calculated.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares NetworkX, concept, and Poset DAG with chunks 0 and 12, but betweenness centrality is never calculated.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+    ]
+  },
+  {
+    "question_id": "q072",
+    "question": "What is the discount factor gamma used in the Q-Matrix Q-learning reinforcement algorithm?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares Q-Matrix with chunk 19, but the Q-Matrix is a binary cognitive mapping table, not reinforcement Q-learning.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares Q-Matrix with chunk 19, but the Q-Matrix is a binary cognitive mapping table, not reinforcement Q-learning.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+    ]
+  },
+  {
+    "question_id": "q073",
+    "question": "What is the learning rate of the Adam optimizer used to fit the BKT parameters in PyBKT?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares BKT and parameters with chunk 13, but BKT parameters are fixed psychometric defaults, not fitted via Adam.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares BKT and parameters with chunk 13, but BKT parameters are fixed psychometric defaults, not fitted via Adam.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ]
+  },
+  {
+    "question_id": "q074",
+    "question": "What is the Dirichlet prior distribution parameter alpha applied to the Hidden Markov Model in BKT?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares BKT, HMM, and Prior with chunk 13, but BKT uses scalar P(L0)=0.20 rather than a Dirichlet prior distribution.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares BKT, HMM, and Prior with chunk 13, but BKT uses scalar P(L0)=0.20 rather than a Dirichlet prior distribution.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ]
+  },
+  {
+    "question_id": "q075",
+    "question": "What is the maximum number of worker threads configured in uvicorn for the FastAPI router?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares FastAPI and routers/student.py with chunks 7 and 30, but uvicorn thread counts are not specified.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares FastAPI and routers/student.py with chunks 7 and 30, but uvicorn thread counts are not specified.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+    ]
+  },
+  {
+    "question_id": "q076",
+    "question": "How does Kahn's algorithm compute the critical path duration in the NetworkX graph?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares Kahn's algorithm, NetworkX, and DAG with chunks 4 and 12, but Kahn's algorithm is used solely for cycle detection.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares Kahn's algorithm, NetworkX, and DAG with chunks 4 and 12, but Kahn's algorithm is used solely for cycle detection.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+    ]
+  },
+  {
+    "question_id": "q077",
+    "question": "What is the maximum Celery broker retry delay when publishing to the Redis cluster?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares Celery, Redis, and background worker with chunks 7 and 8, but broker retry delay parameters are absent.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares Celery, Redis, and background worker with chunks 7 and 8, but broker retry delay parameters are absent.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ]
+  },
+  {
+    "question_id": "q078",
+    "question": "What is the Shannon entropy formula in base 2 used to calculate cognitive uncertainty in dina_service.py?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares entropy and dina_service.py with chunk 23, but the engine uses Quadratic Entropy 1-4P(1-P), not base-2 Shannon entropy.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares entropy and dina_service.py with chunk 23, but the engine uses Quadratic Entropy 1-4P(1-P), not base-2 Shannon entropy.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ]
+  },
+  {
+    "question_id": "q079",
+    "question": "What is the Item Characteristic Curve slope parameter (a-parameter) in the 3PL IRT model in KnowledgeTrace MCQ?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares psychometric terminology with chunks 0, 3, and 13, but the system uses BKT and DINA, not 3PL IRT models.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares psychometric terminology with chunks 0, 3, and 13, but the system uses BKT and DINA, not 3PL IRT models.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ]
+  },
+  {
+    "question_id": "q080",
+    "question": "What is the Gibbs sampling Markov Chain Monte Carlo burn-in iteration count for DINA blocks?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares DINA, block, and sampling with chunk 21, but the system uses exact vectorized Log-Sum-Exp or O(1) single-skill fallback.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares DINA, block, and sampling with chunk 21, but the system uses exact vectorized Log-Sum-Exp or O(1) single-skill fallback.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+    ]
+  },
+  {
+    "question_id": "q081",
+    "question": "What is the ASSISTments dataset test set F1-score for predicting student standardized state exam performance?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares ASSISTments and benchmark with chunk 32, but the document only reports an AUC ~0.73 for BKT sequence evaluation.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares ASSISTments and benchmark with chunk 32, but the document only reports an AUC ~0.73 for BKT sequence evaluation.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+    ]
+  },
+  {
+    "question_id": "q082",
+    "question": "What is the ROC-AUC score achieved by the DINA model on the Junyi Academy dataset?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares Junyi Academy and DINA with chunk 32, but Junyi validates concept prerequisite DAGs, not DINA ROC-AUC.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares Junyi Academy and DINA with chunk 32, but Junyi validates concept prerequisite DAGs, not DINA ROC-AUC.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ]
+  },
+  {
+    "question_id": "q083",
+    "question": "How many questions are in the Tatsuoka Fraction Subtraction test for college mathematics entrance exams?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares Tatsuoka Fraction Subtraction with chunk 33, but the dataset has 20 items for fraction subtraction, not college entrance.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares Tatsuoka Fraction Subtraction with chunk 33, but the dataset has 20 items for fraction subtraction, not college entrance.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ]
+  },
+  {
+    "question_id": "q084",
+    "question": "What is the WebSocket heartbeat ping interval configured for real-time teacher alerts?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares teacher, alerts, and UI with chunks 24 and 31, but WebSocket ping intervals are not in the document.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares teacher, alerts, and UI with chunks 24 and 31, but WebSocket ping intervals are not in the document.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+    ]
+  },
+  {
+    "question_id": "q085",
+    "question": "What is the PostgreSQL connection pool maximum overflow setting in database.py?",
+    "category": "Hard Negative",
+    "expected_answer": "REJECT: Shares PostgreSQL and database with chunks 7 and 29, but connection pool overflow settings are not documented.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true,
+    "trap_reason": "Shares PostgreSQL and database with chunks 7 and 29, but connection pool overflow settings are not documented.",
+    "misleading_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+    ]
+  },
+  {
+    "question_id": "q086",
+    "question": "In machine_learning_algorithms.pdf, what is the default prior knowledge probability P(L0)?",
+    "category": "Document-specific",
+    "expected_answer": "0.20 (20%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q087",
+    "question": "In machine_learning_algorithms.pdf, which file implements the function infer_llm_concept_edges?",
+    "category": "Document-specific",
+    "expected_answer": "services/concept_graph.py",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q088",
+    "question": "In machine_learning_algorithms.pdf, what formula defines the conjunctive AND rule in DINA?",
+    "category": "Document-specific",
+    "expected_answer": "xi_j(alpha) = prod alpha_k^{q_jk}",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q089",
+    "question": "In machine_learning_algorithms.pdf, what is the confidence score when student mastery P is 0.85?",
+    "category": "Document-specific",
+    "expected_answer": "Confidence = 1 - 4(0.85 * 0.15) = 0.49 (49%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q090",
+    "question": "In machine_learning_algorithms.pdf, which benchmark dataset came from Worcester Polytechnic Institute?",
+    "category": "Document-specific",
+    "expected_answer": "ASSISTments 2009-2010",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q091",
+    "question": "In machine_learning_algorithms.pdf, what is the slip probability P(S) in BKT?",
+    "category": "Document-specific",
+    "expected_answer": "0.10 (10%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q092",
+    "question": "In machine_learning_algorithms.pdf, what function checks whether the prerequisite graph is acyclic?",
+    "category": "Document-specific",
+    "expected_answer": "is_directed_acyclic_graph() / nx.is_directed_acyclic_graph(G)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q093",
+    "question": "In machine_learning_algorithms.pdf, which background task triggers asynchronous mastery updates?",
+    "category": "Document-specific",
+    "expected_answer": "run_mastery_and_diagnosis()",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q094",
+    "question": "In foreign_system_architecture.pdf, what is the reported latency target?",
+    "category": "Document-specific",
+    "expected_answer": "REJECT: Document foreign_system_architecture.pdf does not exist in the index.",
+    "relevant_doc_id": "doc_foreign_spec_001",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "q095",
+    "question": "In financial_audit_2026.pdf, what is the net revenue figure?",
+    "category": "Document-specific",
+    "expected_answer": "REJECT: Document financial_audit_2026.pdf does not exist in the index.",
+    "relevant_doc_id": "doc_foreign_spec_002",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "q096",
+    "question": "What is its target inference speed?",
+    "history": [
+      [
+        "What is KnowledgeTrace MCQ?",
+        "KnowledgeTrace MCQ is an educational psychometrics and ML test system."
+      ]
+    ],
+    "expected_contextualized_query": "What is the target inference speed of KnowledgeTrace MCQ?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "< 15ms (NumPy Vectorized)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q097",
+    "question": "What are their slip and guess probability values?",
+    "history": [
+      [
+        "Which models are used in Layer 2 and Layer 3?",
+        "Layer 2 uses Bayesian Knowledge Tracing and Layer 3 uses the DINA model."
+      ]
+    ],
+    "expected_contextualized_query": "What are the slip and guess probability values for BKT and DINA in KnowledgeTrace MCQ?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Both models share P(Slip) = 0.10 (10%) and P(Guess) = 0.25 (25%)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q098",
+    "question": "Which function performs this directed acyclic graph check?",
+    "history": [
+      [
+        "How does the system prevent prerequisite cycles?",
+        "It evaluates prerequisite edges using networkx to ensure the graph is a DAG."
+      ]
+    ],
+    "expected_contextualized_query": "Which function performs the directed acyclic graph check in NetworkX for KnowledgeTrace MCQ?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "is_directed_acyclic_graph() / nx.is_directed_acyclic_graph(G)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q099",
+    "question": "What is the exact equation for it?",
+    "history": [
+      [
+        "How is student confidence calculated?",
+        "KnowledgeTrace MCQ uses a quadratic entropy formula to compute epistemic confidence."
+      ]
+    ],
+    "expected_contextualized_query": "What is the exact equation for quadratic entropy confidence in KnowledgeTrace MCQ?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Confidence = 1 - 4 * P * (1 - P)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "q100",
+    "question": "Which function flags a skill as a Likely Missing Prerequisite?",
+    "history": [
+      [
+        "What happens when a student misses an exam question?",
+        "The diagnostic engine searches for missing skills."
+      ]
+    ],
+    "expected_contextualized_query": "Which function flags a skill as a Likely Missing Prerequisite in KnowledgeTrace MCQ?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "get_question_why() flags skills with mastery P < 0.50",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24"
+    ],
+    "should_reject": false
+  }
+]

@@ -56,7 +56,9 @@ The interface should feel approachable and thoughtful. The engineering underneat
 - [ ] Say when the available evidence is insufficient rather than inventing certainty.
 - [ ] Offer a separate FastAPI backend and a simple Gradio interface.
 
-**Project status:** the initial repository foundation is in place. The checklist above describes the intended direction; these capabilities are not yet all implemented or verified. The project is being developed in small, testable milestones.
+**Project status:** the local runtime is implemented and covered by automated
+tests. Real answer generation requires a running Ollama service with the
+configured models; the test suite mocks that boundary.
 
 ## The planned journey of a question
 
@@ -118,7 +120,8 @@ A few important boundaries:
 
 ## Getting started
 
-LocalRAG is under active development. The repository currently contains the project scaffold and dependency setup; the complete end-to-end application is not ready to run yet.
+The repository contains a FastAPI backend and a Gradio client. The API persists
+uploaded PDFs and a NumPy vector index under `data/`.
 
 ### Prerequisites
 
@@ -151,20 +154,88 @@ ollama pull nomic-embed-text
 ollama pull llama3.2:1b
 ```
 
-These steps prepare the development environment. They do **not** launch a complete LocalRAG application yet; the API routes and document-to-answer workflow are still being implemented.
+These steps prepare the development environment. The API and UI can then be
+started using the commands below.
+
+### Run the application
+
+Copy `.env.example` to `.env` and adjust values if Ollama runs somewhere other
+than the local machine. Start the API and UI in separate terminals:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn src.api.main:app --host 127.0.0.1 --port 8000
+.\.venv\Scripts\python.exe frontend\app.py
+```
+
+Verify process and dependency status:
+
+```powershell
+curl.exe http://127.0.0.1:8000/health
+curl.exe http://127.0.0.1:8000/ready
+```
+
+Upload a PDF at `http://127.0.0.1:7860`, then ask a question whose answer is
+present in the document. The response includes filename and one-based page
+references. Scanned PDFs without a text layer are reported as unsupported; OCR
+is not silently assumed.
+
+### Docker Compose
+
+```powershell
+Copy-Item .env.example .env
+docker compose up --build
+docker compose exec ollama ollama pull nomic-embed-text
+docker compose exec ollama ollama pull llama3.2:1b
+```
+
+Compose stores documents, the index, and Ollama models in separate named
+volumes. The Compose API service overrides `OLLAMA_BASE_URL` to
+`http://ollama:11434`; the host-side value in `.env` is used for local,
+non-Compose execution. Do not expose port 11434 publicly. GPU acceleration is not assumed;
+configure Docker GPU passthrough separately only when the host supports it.
+
+### Configuration and operational limits
+
+See [`.env.example`](.env.example) for all supported settings, including upload
+size, chunking, retrieval threshold, timeout, and CORS origins. Re-indexing
+with a changed embedding model requires deleting/rebuilding the local index;
+the loader rejects incompatible model metadata. Existing filenames are rejected
+to avoid accidental overwrites. Back up `data/documents` and `data/index`
+together.
+
+Use `DELETE /documents/{document_id}` to remove an indexed document and its
+matching stored PDF. Changing chunking settings requires rebuilding the index;
+changing the embedding model is rejected until the old index is removed.
+
+The API has no authentication. It is suitable for trusted local networks only.
+Before public exposure, add authentication, HTTPS, rate limiting, audit-safe
+logging, and a private network boundary around Ollama and storage.
+
+Run tests with:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+The default similarity threshold is `0.70` to prefer abstention over weak
+matches. Tune it only after evaluating representative documents and questions.
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and
+[docs/CURRENT_STATE_AUDIT.md](docs/CURRENT_STATE_AUDIT.md) for verified design
+and limitations.
 
 ## Development roadmap
 
 - [x] Establish the repository structure and Python environment.
 - [x] Add initial dependency constraints and local-data protections to `.gitignore`.
-- [ ] Build robust PDF ingestion and text chunking.
-- [ ] Implement and test the embedding client.
-- [ ] Persist and search the local vector index.
-- [ ] Build retrieval-grounded answer generation with source references.
-- [ ] Add FastAPI endpoints and API-level tests.
-- [ ] Build the Gradio interface against the API.
-- [ ] Test the complete workflow with sample documents and edge cases.
-- [ ] Document known limitations, configuration, and troubleshooting.
+- [x] Build robust PDF ingestion and text chunking.
+- [x] Implement and test the embedding client.
+- [x] Persist and search the local vector index.
+- [x] Build retrieval-grounded answer generation with source references.
+- [x] Add FastAPI endpoints and API-level tests.
+- [x] Build the Gradio interface against the API.
+- [x] Test the complete workflow with mocked and real local Ollama models.
+- [x] Document known limitations, configuration, and troubleshooting.
 
 ## Project principles
 

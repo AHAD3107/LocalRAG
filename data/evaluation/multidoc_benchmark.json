@@ -1,0 +1,1769 @@
+[
+  {
+    "question_id": "md_q001",
+    "question": "What is the default value for Prior Knowledge P(L0) in BKT?",
+    "category": "Exact factual",
+    "expected_answer": "0.20",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q002",
+    "question": "What does the binary Q-matrix represent in the DINA model?",
+    "category": "Exact factual",
+    "expected_answer": "A binary table linking test questions to latent psychological skills",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q003",
+    "question": "What is the inference latency target for KnowledgeTrace MCQ?",
+    "category": "Exact factual",
+    "expected_answer": "< 15ms (NumPy Vectorized)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q004",
+    "question": "Who formalized the DINA cognitive diagnosis model and in which year?",
+    "category": "Exact factual",
+    "expected_answer": "Junker & Sijtsma (2001)",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q005",
+    "question": "What is the guess probability in a 4-choice question in KnowledgeTrace MCQ?",
+    "category": "Exact factual",
+    "expected_answer": "25% chance of guessing correctly",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q006",
+    "question": "What are the standard disk page sizes in PostgreSQL and MySQL InnoDB?",
+    "category": "Exact factual",
+    "expected_answer": "8 KB for PostgreSQL and 16 KB for MySQL InnoDB",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q007",
+    "question": "What are the three distinct phases of the ARIES recovery algorithm?",
+    "category": "Exact factual",
+    "expected_answer": "Analysis Phase, Redo Phase, and Undo Phase",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q008",
+    "question": "What fanout factor M is achieved by an 8 KB B+ Tree internal node storing 8-byte keys and 8-byte pointers?",
+    "category": "Exact factual",
+    "expected_answer": "M = 512",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q009",
+    "question": "What background cycle-detection algorithm detects deadlocks in the Wait-For Graph every 500 ms?",
+    "category": "Exact factual",
+    "expected_answer": "Tarjan's strongly connected components algorithm",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q010",
+    "question": "How many virtual nodes (vnodes) is each physical server mapped to in the consistent hashing ring?",
+    "category": "Exact factual",
+    "expected_answer": "256 virtual nodes (vnodes)",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q011",
+    "question": "What is the minimum encapsulation header overhead of an Ethernet, IPv4, and TCP packet?",
+    "category": "Exact factual",
+    "expected_answer": "54 bytes (14 bytes Ethernet + 20 bytes IPv4 + 20 bytes TCP)",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c2"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q012",
+    "question": "What is the duration of the TCP TIME_WAIT state defined as 2 times MSL?",
+    "category": "Exact factual",
+    "expected_answer": "120 seconds (2 * MSL)",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q013",
+    "question": "What is the Maximum Segment Size (MSS) for standard Ethernet with 1500-byte MTU?",
+    "category": "Exact factual",
+    "expected_answer": "1460 bytes",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q014",
+    "question": "What mathematical curve does TCP Cubic use to model window growth?",
+    "category": "Exact factual",
+    "expected_answer": "W_cubic(t) = C * (t - K)^3 + W_max",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q015",
+    "question": "Over which transport layer protocol does HTTP/3 operate?",
+    "category": "Exact factual",
+    "expected_answer": "UDP on port 443 via QUIC",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q016",
+    "question": "What parser was introduced in Python 3.9 implemented in Parser/pegen.c?",
+    "category": "Exact factual",
+    "expected_answer": "The PEG parser",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q017",
+    "question": "What fixed wordcode instruction size was introduced in Python 3.6 for bytecode?",
+    "category": "Exact factual",
+    "expected_answer": "Fixed 16-bit wordcode format (8-bit opcode, 8-bit oparg)",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c2"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q018",
+    "question": "What memory size threshold determines when PyMalloc delegates to system malloc?",
+    "category": "Exact factual",
+    "expected_answer": "Allocations exceeding 512 bytes",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c5"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q019",
+    "question": "What is the default GIL switching interval in CPython configured via sys.getswitchinterval()?",
+    "category": "Exact factual",
+    "expected_answer": "5.0 milliseconds",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q020",
+    "question": "What three methods define the Python descriptor protocol?",
+    "category": "Exact factual",
+    "expected_answer": "__get__, __set__, and __delete__",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q021",
+    "question": "What law states that organizations design systems mirroring their communication structures?",
+    "category": "Exact factual",
+    "expected_answer": "Conway's Law",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q022",
+    "question": "What pattern coordinates distributed transactions without shared ACID locks as a sequence of local transactions?",
+    "category": "Exact factual",
+    "expected_answer": "The Saga pattern",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c4"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q023",
+    "question": "What background engine streams outbox records from PostgreSQL WAL logs to Kafka?",
+    "category": "Exact factual",
+    "expected_answer": "Debezium",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c7"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q024",
+    "question": "What are the three states of a Martin Fowler Circuit Breaker?",
+    "category": "Exact factual",
+    "expected_answer": "Closed, Open, and Half-Open",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q025",
+    "question": "What header standard is used for W3C distributed tracing context propagation?",
+    "category": "Exact factual",
+    "expected_answer": "traceparent header with 16-byte trace-id and 8-byte parent-id",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q026",
+    "question": "How does the educational diagnostic system prevent circular prerequisite dependencies?",
+    "category": "Paraphrased",
+    "expected_answer": "By detecting cycles and maintaining a Directed Acyclic Graph (DAG) invariant in NetworkX",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q027",
+    "question": "Why is raw percentage grading insufficient for diagnosing deep student understanding?",
+    "category": "Paraphrased",
+    "expected_answer": "Because it treats all questions equally and ignores lucky guesses and careless slips",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q028",
+    "question": "What mathematical structure represents student skill mastery transitions over sequential practice attempts?",
+    "category": "Paraphrased",
+    "expected_answer": "A Hidden Markov Model (HMM) with 2 states: unmastered and mastered",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q029",
+    "question": "How does the system ensure non-blocking UI responsiveness when processing cognitive diagnosis?",
+    "category": "Paraphrased",
+    "expected_answer": "By committing responses to an API ingestion queue and running diagnosis in background Celery workers",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q030",
+    "question": "What historical fraction subtraction dataset serves as a benchmark for Q-Matrix validation?",
+    "category": "Paraphrased",
+    "expected_answer": "Tatsuoka Fraction Subtraction (1990) with 536 students and 20 items",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q031",
+    "question": "Why do database storage engines prefer CLOCK-Pro or 2Q over simple LRU for buffer eviction?",
+    "category": "Paraphrased",
+    "expected_answer": "To prevent sequential scan pollution from evicting frequently accessed index pages",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q032",
+    "question": "How do LSM-Trees reduce write amplification on solid-state drives compared to traditional B-Trees?",
+    "category": "Paraphrased",
+    "expected_answer": "By buffering writes in memory (MemTable) and appending them sequentially to SSTables",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q033",
+    "question": "In PostgreSQL MVCC, how does a transaction know if a row version was created by a committed transaction?",
+    "category": "Paraphrased",
+    "expected_answer": "By checking the xmin transaction ID against its active snapshot Read View",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q034",
+    "question": "How many votes must a candidate receive to become the leader in a 5-node Raft cluster?",
+    "category": "Paraphrased",
+    "expected_answer": "At least 3 votes (floor(N/2) + 1 strict majority quorum)",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q035",
+    "question": "What prevents two transactions from modifying the same record simultaneously in Strict 2PL?",
+    "category": "Paraphrased",
+    "expected_answer": "Exclusive locks (X-Locks) held until the transaction commits or aborts",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q036",
+    "question": "Why does TCP require a 3-way exchange before transmitting application payload bytes?",
+    "category": "Paraphrased",
+    "expected_answer": "To synchronize Initial Sequence Numbers (ISNs) and allocate Transmission Control Blocks (TCBs)",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c4"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q037",
+    "question": "How does the TCP receiver prevent a high-speed sender from overflowing its socket receive queue?",
+    "category": "Paraphrased",
+    "expected_answer": "By advertising its remaining available buffer space in the rcv_wnd window field",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q038",
+    "question": "What prevents delayed duplicate packets from an old connection from interfering with a new TCP session?",
+    "category": "Paraphrased",
+    "expected_answer": "The 120-second TIME_WAIT state (2 * Maximum Segment Lifetime)",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q039",
+    "question": "How does Google's BBR congestion control differ fundamentally from loss-based Cubic?",
+    "category": "Paraphrased",
+    "expected_answer": "BBR models bottleneck bandwidth and minimum RTT instead of waiting for packet drops",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q040",
+    "question": "Why does packet loss in HTTP/3 not block unrelated concurrent streams unlike HTTP/2?",
+    "category": "Paraphrased",
+    "expected_answer": "QUIC runs over UDP with independent per-stream loss recovery",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q041",
+    "question": "How does PEP 659 adaptive specializing accelerate CPython bytecode without JIT compilation?",
+    "category": "Paraphrased",
+    "expected_answer": "By dynamically replacing generic opcodes with specialized variants for observed data types",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q042",
+    "question": "Why does CPython organize small object allocations into 256 KB arenas and 4 KB pools?",
+    "category": "Paraphrased",
+    "expected_answer": "To eliminate operating system heap fragmentation for objects of 512 bytes or smaller",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q043",
+    "question": "What cleanup mechanism handles reference cycles that simple reference counting fails to free?",
+    "category": "Paraphrased",
+    "expected_answer": "The cyclic generational garbage collector (gc module) with 3 generation rings",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c7"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q044",
+    "question": "How do C extensions like NumPy execute parallel multi-threaded computations despite the GIL?",
+    "category": "Paraphrased",
+    "expected_answer": "By releasing the GIL via Py_BEGIN_ALLOW_THREADS during intensive computations",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q045",
+    "question": "How does the asyncio event loop avoid consuming 100% CPU while waiting for socket network data?",
+    "category": "Paraphrased",
+    "expected_answer": "By utilizing operating system I/O multiplexing primitives such as epoll or IOCP",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c16"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q046",
+    "question": "Why should microservices avoid accessing each other's underlying database tables directly?",
+    "category": "Paraphrased",
+    "expected_answer": "To preserve loose coupling and allow services to alter their internal schemas independently",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p1_c2"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q047",
+    "question": "How does the Transactional Outbox pattern prevent lost event messages during server crashes?",
+    "category": "Paraphrased",
+    "expected_answer": "By saving the business record and the outbox event together in a single atomic database transaction",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q048",
+    "question": "What prevents an unresponsive downstream service from crashing calling services in a cascade?",
+    "category": "Paraphrased",
+    "expected_answer": "A Circuit Breaker that trips to OPEN and fails fast after reaching an error threshold",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q049",
+    "question": "Why does exponential backoff add randomized full jitter to retry intervals?",
+    "category": "Paraphrased",
+    "expected_answer": "To prevent synchronized retry storms and the thundering herd problem",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q050",
+    "question": "What deployment technique switches production traffic immediately between two identical environments?",
+    "category": "Paraphrased",
+    "expected_answer": "Blue-Green Deployment",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q051",
+    "question": "Explain the complete lifecycle of a student answer from ingestion to BKT and DINA diagnosis.",
+    "category": "Multi-chunk",
+    "expected_answer": "Step 1 HTTP POST, Step 2 synchronous validation, Step 3 asynchronous Celery dispatch, Step 4 BKT mastery update and DINA Q-matrix partitioning.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q052",
+    "question": "How do the DINA model and Bayesian Knowledge Tracing collaborate to provide holistic student assessment?",
+    "category": "Multi-chunk",
+    "expected_answer": "BKT tracks sequential mastery over time as an HMM, while DINA evaluates multi-attribute skill requirements via a binary Q-matrix.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q053",
+    "question": "What are the mathematical equations for BKT prior update and confidence score calculation?",
+    "category": "Multi-chunk",
+    "expected_answer": "BKT uses Bayesian posterior update P(L_t|obs), while Confidence = 1 - 4 * P * (1 - P).",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q054",
+    "question": "What benchmarks validate concept DAG sequencing and cognitive diagnosis scalability?",
+    "category": "Multi-chunk",
+    "expected_answer": "ASSISTments (Worcester) validates BKT with AUC ~0.73, Junyi Academy validates 835 concept DAG, and Tatsuoka validates Q-matrix DINA.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q055",
+    "question": "How does ARIES recovery interact with Write-Ahead Logging and checkpoints during system crash recovery?",
+    "category": "Multi-chunk",
+    "expected_answer": "WAL flushes dirty page logs before writes; upon crash, ARIES Analysis identifies dirty pages from checkpoint, Redo replays history, Undo reverses uncommitted transactions.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q056",
+    "question": "Compare the indexing mechanisms of B+ Trees with LSM-Trees regarding write vs read optimization.",
+    "category": "Multi-chunk",
+    "expected_answer": "B+ Trees optimize reads with 512 fanout and leaf linked lists but cause random writes; LSM-Trees optimize writes via sequential SSTables and MemTables, using Bloom filters for reads.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q057",
+    "question": "How do MVCC tuple headers and autovacuum work together to maintain database performance?",
+    "category": "Multi-chunk",
+    "expected_answer": "Tuple headers use xmin and xmax for snapshot visibility without locking; autovacuum cleans up dead tuples whose xmax is older than active snapshots.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c11",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q058",
+    "question": "Describe how Raft consensus and Two-Phase Commit operate together in a distributed partitioned database.",
+    "category": "Multi-chunk",
+    "expected_answer": "Raft replicates logs across nodes within a partition quorum, while Two-Phase Commit ensures atomic multi-partition transactions across clusters via prepare and commit phases.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q059",
+    "question": "How do TCP sliding window flow control and AIMD congestion control interact to govern transmission rates?",
+    "category": "Multi-chunk",
+    "expected_answer": "Flow control limits unacknowledged bytes to receiver buffer rcv_wnd, while congestion control dynamically adjusts cwnd based on network capacity; transmission is min(cwnd, rcv_wnd).",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q060",
+    "question": "Trace the lifecycle of a TCP connection from 3-way handshake to 4-step teardown and TIME_WAIT.",
+    "category": "Multi-chunk",
+    "expected_answer": "Begins with SYN -> SYN-ACK -> ACK exchanging ISNs; ends with FIN -> ACK -> FIN -> ACK followed by 120-second TIME_WAIT to purge delayed duplicates.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c4",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c5"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q061",
+    "question": "Compare HTTP/2 stream multiplexing with HTTP/3 over QUIC regarding packet loss behavior.",
+    "category": "Multi-chunk",
+    "expected_answer": "HTTP/2 interleaves binary frames over one TCP connection causing HoL blocking on dropped packets; HTTP/3 runs over UDP/QUIC with independent per-stream loss recovery.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c13",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q062",
+    "question": "How does packet encapsulation overhead affect the Maximum Segment Size on standard Ethernet?",
+    "category": "Multi-chunk",
+    "expected_answer": "Ethernet 14B + IPv4 20B + TCP 20B = 54B total encapsulation; on a 1500-byte MTU, this limits TCP MSS to exactly 1460 bytes.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c1",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q063",
+    "question": "Explain the journey of Python code from parsing and AST compilation to bytecode evaluation in ceval.",
+    "category": "Multi-chunk",
+    "expected_answer": "The PEG parser converts source to parse tree, AST builds syntax grammar, compiler creates 16-bit wordcode code objects, and ceval loop executes instructions with PEP 659 quickening.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c0",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q064",
+    "question": "How does CPython combine reference counting with generational garbage collection to manage memory?",
+    "category": "Multi-chunk",
+    "expected_answer": "Reference counting immediately deallocates objects when refcnt drops to 0; the cyclic gc scans Gen 0, 1, and 2 rings to collect circular references.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c5",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q065",
+    "question": "What architectural changes does PEP 703 Free-Threading introduce to eliminate the Global Interpreter Lock?",
+    "category": "Multi-chunk",
+    "expected_answer": "Replaces PyMalloc with thread-safe mimalloc, introduces Biased Reference Counting for local threads, and creates immortal objects to avoid atomic operations.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c9",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q066",
+    "question": "How do Python descriptors and generator frame states power coroutines and asyncio event loops?",
+    "category": "Multi-chunk",
+    "expected_answer": "Descriptors manage class/function access; generators maintain resumable PyGenObject frame states on the heap, which async/await schedules onto the event loop using OS demultiplexing.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q067",
+    "question": "How do the Saga pattern and Transactional Outbox pattern solve distributed consistency without 2PC?",
+    "category": "Multi-chunk",
+    "expected_answer": "Sagas coordinate local transactions via choreography or orchestration with compensating rollbacks, while the Outbox pattern with Debezium CDC guarantees atomic database writes and Kafka event publishing.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c4",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q068",
+    "question": "How do Circuit Breakers, Bulkheads, and Exponential Jitter protect cloud architectures from cascading failures?",
+    "category": "Multi-chunk",
+    "expected_answer": "Circuit breakers fail fast when error rates exceed 50%, bulkheads isolate thread/connection pools, and full jitter randomizes backoff sleep to eliminate retry storms.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c8",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q069",
+    "question": "Explain how Domain-Driven Design bounded contexts align with Conway's Law in microservice organizations.",
+    "category": "Multi-chunk",
+    "expected_answer": "Conway's Law states team structures dictate architecture; DDD bounded contexts define autonomous business subdomains, enabling independent two-pizza teams to own services end-to-end.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p1_c0",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q070",
+    "question": "How do the 12-Factor stateless process guidelines enable zero-downtime Blue-Green deployments?",
+    "category": "Multi-chunk",
+    "expected_answer": "Factor VI mandates stateless share-nothing processes, allowing routers to switch 100% active traffic instantly from Blue to Green without losing user sessions.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c12",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q071",
+    "question": "Compare the concurrency mechanisms: how does Python's GIL mutex compare to Database Strict 2PL locking?",
+    "category": "Cross-document",
+    "expected_answer": "Python's GIL is a single mutex serializing VM bytecode execution across threads, while Strict 2PL uses granular shared/exclusive locks on tuples to ensure serializable transactions.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c9",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q072",
+    "question": "How does Celery asynchronous queueing in KnowledgeTrace MCQ implement the Microservices decoupling principle?",
+    "category": "Cross-document",
+    "expected_answer": "It offloads heavy psychometric computations to background Celery workers so HTTP requests return in under 15ms, adhering to non-blocking service communication.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p1_c2"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q073",
+    "question": "Contrast the memory management of CPython's PyMalloc pools with Database buffer pool page frames.",
+    "category": "Cross-document",
+    "expected_answer": "PyMalloc manages small CPU memory allocations up to 512 bytes in 4KB pools, while DB buffer pools manage 8KB/16KB disk page frames using CLOCK-Pro eviction.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c5",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c1"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q074",
+    "question": "How does TCP packet encapsulation overhead compare to the W3C TraceContext traceparent HTTP header overhead?",
+    "category": "Cross-document",
+    "expected_answer": "TCP encapsulation adds 54 bytes at layers 2-4, while W3C TraceContext adds an application header containing a 16-byte trace-id and 8-byte parent-id.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c1",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q075",
+    "question": "Compare the failure recovery of Database ARIES WAL logging with Microservices Saga compensating transactions.",
+    "category": "Cross-document",
+    "expected_answer": "ARIES WAL replays physical page history (Redo) and rolls back active transactions (Undo) on a single node, while Sagas execute semantic compensating business actions across distributed services.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c4"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q076",
+    "question": "Contrast B+ Tree leaf linked lists in database engines with Python generator resumable frame states.",
+    "category": "Cross-document",
+    "expected_answer": "B+ Tree leaf lists link disk pages bidirectionally for sequential storage access, while Python generators maintain execution frames on the heap to resume state upon next().",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q077",
+    "question": "How does network socket I/O multiplexing in CPython asyncio connect to TCP sliding window buffer availability?",
+    "category": "Cross-document",
+    "expected_answer": "The asyncio event loop uses OS epoll/IOCP to detect when a socket is ready for reading/writing, matching the TCP receiver's advertised rcv_wnd window space.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q078",
+    "question": "Compare the distributed consensus of Raft with the Two-Phase Commit protocol for cross-partition transactions.",
+    "category": "Cross-document",
+    "expected_answer": "Raft achieves consensus within a single replica group using a majority quorum, whereas 2PC coordinates atomic execution across distinct partitions requiring unanimous agreement.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q079",
+    "question": "How do Debezium CDC and PostgreSQL WAL logs enable the Transactional Outbox pattern in software engineering?",
+    "category": "Cross-document",
+    "expected_answer": "PostgreSQL records changes in WAL for durability; Debezium reads these WAL logs directly to stream outbox table events to Kafka without double-writing.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c2",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q080",
+    "question": "Compare TCP 120-second TIME_WAIT state with Circuit Breaker 10-second Half-Open cooldown.",
+    "category": "Cross-document",
+    "expected_answer": "TIME_WAIT protects against late duplicate packets from closed TCP connections, while Circuit Breaker cooldown allows trial probe requests to test service recovery.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c5",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q081",
+    "question": "How does CPython reference counting deallocation compare to PostgreSQL autovacuum dead tuple collection?",
+    "category": "Cross-document",
+    "expected_answer": "CPython ref counting deallocates immediately when refcnt hits 0, whereas PostgreSQL keeps obsolete tuple versions until autovacuum reclaims dead space.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q082",
+    "question": "Compare Tarjan's cycle detection algorithm in Database Wait-For Graphs with NetworkX cycle detection in concept DAGs.",
+    "category": "Cross-document",
+    "expected_answer": "Both use cycle detection to prevent deadlocks in transactions (Wait-For Graph) and prevent circular prerequisite loops in educational concept DAGs.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c9",
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q083",
+    "question": "How does HTTP/3 UDP multiplexing avoid the Head-of-Line blocking seen in HTTP/1.1 and HTTP/2?",
+    "category": "Cross-document",
+    "expected_answer": "HTTP/3 runs over QUIC/UDP with independent per-stream loss recovery so dropped packets on one stream do not stall unrelated streams.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c14",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q084",
+    "question": "How does the 12-Factor App methodology for configuration management relate to Python environment variables?",
+    "category": "Cross-document",
+    "expected_answer": "Factor III requires storing config in environment variables, which Python applications access via os.getenv without hardcoding secrets in code objects.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c12",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q085",
+    "question": "Compare Exponential Backoff with Jitter in microservices to TCP AIMD Congestion Control backoff.",
+    "category": "Cross-document",
+    "expected_answer": "Both prevent congestion collapse: TCP cuts its window in half upon packet drop, while microservices back off with randomized jitter to prevent thundering herd retries.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c8",
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q086",
+    "question": "How do Skip-Lists in LSM-Tree MemTables compare to B+ Tree balanced search trees?",
+    "category": "Cross-document",
+    "expected_answer": "Skip-lists provide probabilistic O(log N) in-memory insertion for sequential disk flushing, while B+ Trees provide deterministic O(log N) disk-block fanout.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c7",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c5"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q087",
+    "question": "Contrast CPython wordcode 16-bit instructions with HTTP/2 binary framing structures.",
+    "category": "Cross-document",
+    "expected_answer": "CPython uses fixed 16-bit wordcode (8-bit opcode, 8-bit oparg), whereas HTTP/2 uses binary frames with 31-bit stream IDs and length headers.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c2",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q088",
+    "question": "How does the Bulkhead isolation pattern in microservices relate to thread pools in CPython?",
+    "category": "Cross-document",
+    "expected_answer": "Bulkheads partition dedicated thread/connection pools so failure in auxiliary tasks cannot starve critical workflows, similar to isolating worker threads.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10",
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c9"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q089",
+    "question": "Compare the Blue-Green deployment strategy with distributed 2-Phase Commit coordinator decisions.",
+    "category": "Cross-document",
+    "expected_answer": "Blue-Green switches active router traffic instantly upon verification, while 2PC commits distributed nodes only after all participants vote to commit.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14",
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q090",
+    "question": "How does consistent hashing with 256 virtual nodes balance database shards compared to DNS hierarchical resolution?",
+    "category": "Cross-document",
+    "expected_answer": "Consistent hashing uniformly distributes data keys across server rings via vnodes, while DNS distributes name queries across root, TLD, and authoritative trees.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c13",
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c12"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q091",
+    "question": "What are the ARIES recovery phases described in the database specification?",
+    "category": "Document-specific",
+    "expected_answer": "Analysis, Redo, and Undo",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q092",
+    "question": "What is the B+ tree fanout for 8 KB pages with 8-byte keys?",
+    "category": "Document-specific",
+    "expected_answer": "Fanout M = 512",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q093",
+    "question": "How does MVCC check tuple visibility using xmin and xmax in PostgreSQL?",
+    "category": "Document-specific",
+    "expected_answer": "Using xmin creation ID and xmax deletion ID against active read views",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c11"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q094",
+    "question": "What is the randomized election timeout range in the Raft consensus protocol?",
+    "category": "Document-specific",
+    "expected_answer": "Between 150 ms and 300 ms",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q095",
+    "question": "What is the standard Ethernet MTU size and header overhead?",
+    "category": "Document-specific",
+    "expected_answer": "1500 bytes MTU and 54 bytes baseline encapsulation",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p1_c3"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q096",
+    "question": "What are the steps of the TCP 3-way handshake?",
+    "category": "Document-specific",
+    "expected_answer": "SYN from client, SYN-ACK from server, ACK from client",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c4"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q097",
+    "question": "What congestion control algorithm replaces linear increase with a cubic curve?",
+    "category": "Document-specific",
+    "expected_answer": "TCP Cubic (RFC 8312)",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q098",
+    "question": "What port and transport protocol are utilized by HTTP/3 QUIC?",
+    "category": "Document-specific",
+    "expected_answer": "UDP on port 443",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p4_c15"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q099",
+    "question": "What parser was introduced in Python 3.9 in Parser/pegen.c?",
+    "category": "Document-specific",
+    "expected_answer": "The PEG parser",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p1_c0"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q100",
+    "question": "What size classes are managed by PyMalloc pools?",
+    "category": "Document-specific",
+    "expected_answer": "Multiples of 8 bytes up to 512 bytes",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c6"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q101",
+    "question": "How often is the CPython GIL released during thread switching?",
+    "category": "Document-specific",
+    "expected_answer": "Every 5.0 milliseconds",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q102",
+    "question": "What protocol methods define a Python descriptor?",
+    "category": "Document-specific",
+    "expected_answer": "__get__, __set__, and __delete__",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c13"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q103",
+    "question": "What pattern breaks distributed transactions into local transactions with compensations?",
+    "category": "Document-specific",
+    "expected_answer": "The Saga pattern",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c4"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q104",
+    "question": "What three states compose a Martin Fowler Circuit Breaker?",
+    "category": "Document-specific",
+    "expected_answer": "Closed, Open, and Half-Open",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c8"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q105",
+    "question": "What is the AWS Full Jitter formula for exponential backoff?",
+    "category": "Document-specific",
+    "expected_answer": "Sleep = random(0, min(Max_Backoff, Base_Backoff * 2^attempt))",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c10"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q106",
+    "question": "What deployment strategy maintains two identical environments for instant traffic switching?",
+    "category": "Document-specific",
+    "expected_answer": "Blue-Green Deployment",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c14"
+    ],
+    "should_reject": false
+  },
+  {
+    "question_id": "md_q107",
+    "question": "What is the ARIES recovery algorithm in the foreign document?",
+    "category": "Document-specific",
+    "expected_answer": "Document not found in index",
+    "relevant_doc_id": "foreign_doc_id_991",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q108",
+    "question": "What is the TCP 3-way handshake in the non-existent specification?",
+    "category": "Document-specific",
+    "expected_answer": "Document not found in index",
+    "relevant_doc_id": "foreign_doc_id_992",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q109",
+    "question": "What is the Python GIL switching interval in the missing documentation?",
+    "category": "Document-specific",
+    "expected_answer": "Document not found in index",
+    "relevant_doc_id": "foreign_doc_id_993",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q110",
+    "question": "What is the Circuit Breaker timeout in the unindexed system?",
+    "category": "Document-specific",
+    "expected_answer": "Document not found in index",
+    "relevant_doc_id": "foreign_doc_id_994",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q111",
+    "question": "What happens when it reaches capacity?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "When an internal node exceeds capacity, it splits into two nodes with ceil(M/2) keys and pushes the middle key up.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p2_c6"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What data structure indexes table records?",
+        "Relational databases use B+ Trees with fanout M = 512."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q112",
+    "question": "How is this cycle resolved?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "The lock manager detects cycles in the Wait-For Graph using Tarjan's algorithm and aborts the lowest-cost transaction.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p3_c10"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What happens when two transactions wait on each other?",
+        "They form a deadlock cycle in the Wait-For Graph."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q113",
+    "question": "What happens if one of them votes abort?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "If any participant votes VOTE_ABORT or times out, the coordinator broadcasts GLOBAL_ABORT to all nodes.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [
+      "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f_p4_c16"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "How do distributed nodes agree to commit?",
+        "They use Two-Phase Commit where the coordinator asks nodes to vote."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q114",
+    "question": "How does the server acknowledge it?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "The server replies with SYN and ACK flags set: Seq = ISN_s, Ack = ISN_c + 1.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c4"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "How does a TCP connection begin?",
+        "The client sends a SYN segment with an Initial Sequence Number."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q115",
+    "question": "Why is this delay necessary?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "To prevent delayed duplicate packets from a previous closed connection from corrupting new connections.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p2_c6"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What state follows connection teardown?",
+        "The client transitions into the TIME_WAIT state for 120 seconds."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q116",
+    "question": "How does it avoid packet loss in this phase?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "By pacing transmission to match the physical bottleneck bandwidth and minimum RTT instead of filling buffers.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [
+      "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683_p3_c10"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What is Google BBR?",
+        "BBR is a model-based TCP congestion control algorithm."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q117",
+    "question": "What happens when its count reaches zero?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "When ob_refcnt reaches 0, tp_dealloc is called immediately to free the object memory.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p2_c7"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "How does Python track object lifetimes?",
+        "Every object has an ob_refcnt reference counter."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q118",
+    "question": "How often does this switch happen?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Every 5.0 milliseconds as defined by sys.getswitchinterval().",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p3_c10"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "Does the GIL prevent other threads from running forever?",
+        "No, CPython forces the running thread to release the GIL periodically."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q119",
+    "question": "How does it resume execution?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "When next() is called, execution enters PyEval_EvalFrame and resumes from the f_lasti instruction pointer.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [
+      "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67_p4_c14"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What happens when a generator yields?",
+        "It preserves its frame state on the heap."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q120",
+    "question": "How does it recover when a step fails?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "By executing reverse compensating transactions to undo previously completed local transactions.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p2_c5"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "How does a Saga coordinate transactions?",
+        "A Saga coordinates a series of local transactions across services."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q121",
+    "question": "What happens during this cooldown period?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "The circuit allows a trial probe of 3 requests; if all succeed, it resets to CLOSED; if any fails, it reverts to OPEN.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p3_c9"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What happens after a circuit breaker trips?",
+        "It enters an OPEN state, then transitions to HALF-OPEN after a 10-second cooldown."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q122",
+    "question": "Where should these credentials be stored instead?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Strictly in environment variables, adhering to 12-Factor App Factor III.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [
+      "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446_p4_c12"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "Can database passwords be checked into git?",
+        "No, storing credentials in version control violates 12-Factor principles."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q123",
+    "question": "What is the equation for this calculation?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Confidence = 1 - 4 * P * (1 - P), giving 0 confidence at P = 0.50.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "How does KnowledgeTrace MCQ evaluate uncertainty?",
+        "It calculates a confidence score based on student mastery probability P."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q124",
+    "question": "How is this loop detected?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Using NetworkX directed graph validation to detect cycles and enforce the DAG invariant.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What happens if prerequisite concepts depend on each other circularly?",
+        "Circular loops are logically impossible and rejected."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q125",
+    "question": "Who created this benchmark?",
+    "category": "Conversational follow-ups",
+    "expected_answer": "Kikumi Tatsuoka in 1990 for Rule Space cognitive diagnosis.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [
+      "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+    ],
+    "should_reject": false,
+    "history": [
+      [
+        "What benchmark tests DINA Q-matrices on fraction subtraction?",
+        "The Tatsuoka Fraction Subtraction dataset."
+      ]
+    ]
+  },
+  {
+    "question_id": "md_q126",
+    "question": "What is the SHA-512 hashing algorithm used by B+ Trees to sort leaf node keys?",
+    "category": "Hard Negative",
+    "expected_answer": "B+ trees do not use SHA-512 hashing; they store sorted search keys.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q127",
+    "question": "What is the Paxos leader lease timeout parameter configured in ARIES logging?",
+    "category": "Hard Negative",
+    "expected_answer": "ARIES is a local crash recovery algorithm, not Paxos leader leasing.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q128",
+    "question": "What is the SQLite WAL checkpoint command executed inside PostgreSQL autovacuum daemon?",
+    "category": "Hard Negative",
+    "expected_answer": "PostgreSQL autovacuum does not execute SQLite commands.",
+    "relevant_doc_id": "63f6ec72a2fa020cadab7f00f018ff0ee33f507fdb12a88233c4c5acdf32037f",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q129",
+    "question": "What is the RSA-4096 asymmetric encryption key size required in the IPv4 baseline header?",
+    "category": "Hard Negative",
+    "expected_answer": "IPv4 baseline headers do not contain RSA asymmetric encryption keys.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q130",
+    "question": "What is the UDP 3-way handshake sequence number negotiation procedure?",
+    "category": "Hard Negative",
+    "expected_answer": "UDP is connectionless and does not have a 3-way handshake or sequence numbers.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q131",
+    "question": "What is the BGP autonomous system path prepend formula used in HTTP/3 QUIC streams?",
+    "category": "Hard Negative",
+    "expected_answer": "QUIC streams do not use BGP AS path prepending.",
+    "relevant_doc_id": "2a7a1ad65d0a37155dac84b1e29636d92ccd0b1ef8c9135fe1c198ab33d1a683",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q132",
+    "question": "What is the LLVM JIT compilation threshold used by the CPython PEG parser?",
+    "category": "Hard Negative",
+    "expected_answer": "CPython's PEG parser generates ASTs and does not compile via LLVM JIT.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q133",
+    "question": "What is the mark-sweep compacting algorithm executed by PyMalloc pools?",
+    "category": "Hard Negative",
+    "expected_answer": "PyMalloc is a size-class allocator, not a mark-sweep compacting collector.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q134",
+    "question": "What is the Java virtual machine thread group parameter used by Python asyncio tasks?",
+    "category": "Hard Negative",
+    "expected_answer": "Python asyncio does not run on the JVM or use Java thread groups.",
+    "relevant_doc_id": "000789da0a4a7d7d021a2f3908bbe11864500f3958affba35252b28189a53a67",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q135",
+    "question": "What is the two-phase commit protocol implemented inside AWS Full Jitter backoff?",
+    "category": "Hard Negative",
+    "expected_answer": "Full Jitter is a backoff sleep algorithm, not two-phase commit.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q136",
+    "question": "What is the Debezium Kafka connector port number defined in the 12-factor app manifesto?",
+    "category": "Hard Negative",
+    "expected_answer": "The 12-factor manifesto does not specify Debezium Kafka port numbers.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q137",
+    "question": "What is the Kubernetes ingress YAML specification for Blue-Green Saga orchestrators?",
+    "category": "Hard Negative",
+    "expected_answer": "The document discusses conceptual Blue-Green and Saga patterns, not Kubernetes YAML.",
+    "relevant_doc_id": "bbd2078c9d805658e6054584c0d65f27569a2dade2cf6cad7ab60f8aa7fd0446",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q138",
+    "question": "What is the Q-learning reinforcement learning discount factor gamma used in DINA Q-Matrix?",
+    "category": "Hard Negative",
+    "expected_answer": "DINA is a cognitive diagnosis model, not reinforcement learning with discount factor gamma.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q139",
+    "question": "What is the Adam optimizer learning rate used to fit BKT parameters in PyBKT?",
+    "category": "Hard Negative",
+    "expected_answer": "PyBKT parameter learning rates are not specified in the document.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q140",
+    "question": "What is the Dirichlet prior distribution parameter alpha applied to HMM in KnowledgeTrace MCQ?",
+    "category": "Hard Negative",
+    "expected_answer": "The document uses fixed BKT priors P(L0)=0.2, not a Dirichlet alpha parameter.",
+    "relevant_doc_id": "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582",
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q141",
+    "question": "What is the chemical reaction mechanism of photosynthesis in C4 plants?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q142",
+    "question": "What is the optimal baking temperature and kneading technique for sourdough bread?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q143",
+    "question": "Who won the 1994 FIFA World Cup and what was the final score in the penalty shootout?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q144",
+    "question": "What are the treatment guidelines for pediatric asthma according to the GINA report?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q145",
+    "question": "How does quantum superposition collapse during a Bell test measurement?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q146",
+    "question": "What is the capital city of Madagascar and what currency is used there?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q147",
+    "question": "What are the primary causes of the French Revolution in 1789?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q148",
+    "question": "How do airplane jet engines generate thrust using the Brayton thermodynamic cycle?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q149",
+    "question": "What is the standard tuning and string tension for a classical concert harp?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q150",
+    "question": "How does mRNA lipid nanoparticle delivery work in modern vaccines?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q151",
+    "question": "What is the maximum diving depth and pressure limit for a Sperm Whale?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q152",
+    "question": "What are the architectural orders of ancient Greek temples: Doric, Ionic, and Corinthian?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q153",
+    "question": "How do seismologists calculate earthquake magnitude using the moment magnitude scale (Mw)?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q154",
+    "question": "What is the recipe for preparing authentic Neapolitan pizza dough according to AVPN regulations?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  },
+  {
+    "question_id": "md_q155",
+    "question": "What is the orbital period and perihelion distance of Halley's Comet?",
+    "category": "Unsupported",
+    "expected_answer": "Information not provided in the document corpus.",
+    "relevant_doc_id": null,
+    "relevant_chunk_ids": [],
+    "should_reject": true
+  }
+]

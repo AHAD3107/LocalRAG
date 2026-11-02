@@ -1,0 +1,1545 @@
+{
+  "total_failures": 63,
+  "classification_breakdown": {
+    "EMBEDDING_FAILURE": 7,
+    "RANKING_FAILURE": 27,
+    "CHUNKING_FAILURE": 4,
+    "THRESHOLD_FAILURE": 25
+  },
+  "failed_queries": [
+    {
+      "question_id": "q001",
+      "original_question": "What is the target system name described in the psychometrics specification?",
+      "category": "Exact-match",
+      "search_query": "What is the target system name described in the psychometrics specification?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6186,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5764,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.5655
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q003",
+      "original_question": "Which graph validation library and structure is used in KnowledgeTrace MCQ?",
+      "category": "Exact-match",
+      "search_query": "Which graph validation library and structure is used in KnowledgeTrace MCQ?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.6717,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6329,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.6326,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6188
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q005",
+      "original_question": "What are the two possible mental states modeled in Bayesian Knowledge Tracing?",
+      "category": "Exact-match",
+      "search_query": "What are the two possible mental states modeled in Bayesian Knowledge Tracing?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.763,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6418,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26": 0.6392,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3": 0.6259
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q006",
+      "original_question": "What is the default value for Prior Knowledge P(L0) in BKT?",
+      "category": "Exact-match",
+      "search_query": "What is the default value for Prior Knowledge P(L0) in BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6016,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5729
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "CHUNKING_FAILURE",
+      "explanation": "Target evidence was fragmented or cut across fixed 500-char chunk boundaries. The system retrieved adjacent chunk with score 0.6016, but the specific target answer was cut into an adjacent slice."
+    },
+    {
+      "question_id": "q007",
+      "original_question": "What is the default value for Learning Transition P(T) in BKT?",
+      "category": "Exact-match",
+      "search_query": "What is the default value for Learning Transition P(T) in BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6016,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5729
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "CHUNKING_FAILURE",
+      "explanation": "Target evidence was fragmented or cut across fixed 500-char chunk boundaries. The system retrieved adjacent chunk with score 0.6016, but the specific target answer was cut into an adjacent slice."
+    },
+    {
+      "question_id": "q008",
+      "original_question": "What is the default value for Careless Slip P(S) in BKT?",
+      "category": "Exact-match",
+      "search_query": "What is the default value for Careless Slip P(S) in BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6016,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23": 0.5793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5729
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q011",
+      "original_question": "Who formalized the DINA model and in which year?",
+      "category": "Exact-match",
+      "search_query": "Who formalized the DINA model and in which year?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6646,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26": 0.5966,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33": 0.5922,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5873
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.5765 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q017",
+      "original_question": "What is the quadratic entropy confidence score equation used in dina_service.py?",
+      "category": "Exact-match",
+      "search_query": "What is the quadratic entropy confidence score equation used in dina_service.py?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22": 0.7787,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6471,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6428,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.591
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q018",
+      "original_question": "What confidence score is produced when probability P equals 0.50?",
+      "category": "Exact-match",
+      "search_query": "What confidence score is produced when probability P equals 0.50?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.7299,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6796,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6681,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22": 0.6631
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22']",
+      "failure_classification": "CHUNKING_FAILURE",
+      "explanation": "Target evidence was fragmented or cut across fixed 500-char chunk boundaries. The system retrieved adjacent chunk with score 0.7299, but the specific target answer was cut into an adjacent slice."
+    },
+    {
+      "question_id": "q024",
+      "original_question": "Which background worker mechanism prevents the user interface from freezing during Bayesian calculations?",
+      "category": "Paraphrased",
+      "search_query": "Which background worker mechanism prevents the user interface from freezing during Bayesian calculations?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6383,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.6335,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6151,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.6013
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q027",
+      "original_question": "How does a student's mastery probability change after making an error in BKT?",
+      "category": "Paraphrased",
+      "search_query": "How does a student's mastery probability change after making an error in BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2": 0.8087,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.7523,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.7398,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15": 0.7371
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q028",
+      "original_question": "Can a student unlearn a concept once it has been mastered according to the BKT transition rules?",
+      "category": "Paraphrased",
+      "search_query": "Can a student unlearn a concept once it has been mastered according to the BKT transition rules?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.7621,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6866,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2": 0.686,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5": 0.6748
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.6521 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q030",
+      "original_question": "What model handles questions that test several distinct subject areas at the same time?",
+      "category": "Paraphrased",
+      "search_query": "What model handles questions that test several distinct subject areas at the same time?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.705,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6931,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26": 0.6538,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27": 0.6321
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q031",
+      "original_question": "What happens in DINA if a pupil lacks just a single prerequisite skill for a question?",
+      "category": "Paraphrased",
+      "search_query": "What happens in DINA if a pupil lacks just a single prerequisite skill for a question?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2": 0.7824,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.7634,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.7543,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19": 0.7435
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q033",
+      "original_question": "Under what conditions does the DINA service switch to a closed-form O(1) single-skill fallback?",
+      "category": "Paraphrased",
+      "search_query": "Under what conditions does the DINA service switch to a closed-form O(1) single-skill fallback?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6048,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.6035,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.5949,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.5908
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.5684 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q034",
+      "original_question": "What are the three confidence categories used to rate diagnostic certainty?",
+      "category": "Paraphrased",
+      "search_query": "What are the three confidence categories used to rate diagnostic certainty?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6549,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.646,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6421,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22": 0.641
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22']",
+      "failure_classification": "CHUNKING_FAILURE",
+      "explanation": "Target evidence was fragmented or cut across fixed 500-char chunk boundaries. The system retrieved adjacent chunk with score 0.6549, but the specific target answer was cut into an adjacent slice."
+    },
+    {
+      "question_id": "q036",
+      "original_question": "What role does Layer 1 play relative to Layer 2 and Layer 3?",
+      "category": "Paraphrased",
+      "search_query": "What role does Layer 1 play relative to Layer 2 and Layer 3?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6027,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25": 0.5998,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.5807,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11": 0.5779
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.5765 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q037",
+      "original_question": "Which database table stores the student mastery probabilities computed by BKT?",
+      "category": "Paraphrased",
+      "search_query": "Which database table stores the student mastery probabilities computed by BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.7054,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.7028,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5": 0.6819,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6802
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q040",
+      "original_question": "Which psychometric benchmark established the 8 skill attributes for fraction subtraction?",
+      "category": "Paraphrased",
+      "search_query": "Which psychometric benchmark established the 8 skill attributes for fraction subtraction?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6837,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6699,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17": 0.6605,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6519
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q041",
+      "original_question": "How do Layer 1, Layer 2, and Layer 3 collaborate to guide student learning?",
+      "category": "Multi-chunk",
+      "search_query": "How do Layer 1, Layer 2, and Layer 3 collaborate to guide student learning?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27": 0.6793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6347,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6342,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11": 0.6267
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 0/3 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q042",
+      "original_question": "What are the core differences between BKT and DINA in handling single versus multi-skill questions?",
+      "category": "Multi-chunk",
+      "search_query": "What are the core differences between BKT and DINA in handling single versus multi-skill questions?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6892,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27": 0.6779,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6649,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6608
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 2/3 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q043",
+      "original_question": "What are the slip and guess parameter values used in both BKT and DINA?",
+      "category": "Multi-chunk",
+      "search_query": "What are the slip and guess parameter values used in both BKT and DINA?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6337,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6278,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.6198,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6102
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q044",
+      "original_question": "Explain the complete journey of an MCQ response from submission to database persistence across services.",
+      "category": "Multi-chunk",
+      "search_query": "Explain the complete journey of an MCQ response from submission to database persistence across services.",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.6807,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7": 0.6429,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6016,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.5982
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 3/4 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q045",
+      "original_question": "How does the system ensure fast execution at both the API layer and the mathematical model layer?",
+      "category": "Multi-chunk",
+      "search_query": "How does the system ensure fast execution at both the API layer and the mathematical model layer?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6857,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.6191,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34": 0.609,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6069
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 0/3 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q046",
+      "original_question": "What role does Groq LLaMA play in the concept graph, and how does NetworkX validate its output?",
+      "category": "Multi-chunk",
+      "search_query": "What role does Groq LLaMA play in the concept graph, and how does NetworkX validate its output?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4": 0.7101,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11": 0.7085,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33": 0.7032,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.7007
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 2/3 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q047",
+      "original_question": "Compare the initial BKT prior probability with the probability after a first correct response in the student attempt example.",
+      "category": "Multi-chunk",
+      "search_query": "Compare the initial BKT prior probability with the probability after a first correct response in the student attempt example.",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6866,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6694,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.664,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6456
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q048",
+      "original_question": "How does the quadratic entropy confidence equation behave at maximum uncertainty versus strong mastery?",
+      "category": "Multi-chunk",
+      "search_query": "How does the quadratic entropy confidence equation behave at maximum uncertainty versus strong mastery?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22": 0.7535,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6254,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.5935,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17": 0.5896
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q049",
+      "original_question": "Which Python files implement the core algorithms for concept graphs, BKT estimation, and DINA diagnosis?",
+      "category": "Multi-chunk",
+      "search_query": "Which Python files implement the core algorithms for concept graphs, BKT estimation, and DINA diagnosis?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.7435,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33": 0.7141,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.7141,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6993
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/4 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q050",
+      "original_question": "What database tables store the outputs of API ingestion, BKT estimation, and DINA diagnosis?",
+      "category": "Multi-chunk",
+      "search_query": "What database tables store the outputs of API ingestion, BKT estimation, and DINA diagnosis?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6725,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6286,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.6284,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6168
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q052",
+      "original_question": "What benchmark datasets validate BKT sequence modeling and DINA rule space models respectively?",
+      "category": "Multi-chunk",
+      "search_query": "What benchmark datasets validate BKT sequence modeling and DINA rule space models respectively?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6921,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0": 0.6462,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6199,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.6178
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q055",
+      "original_question": "Describe how BKT observation update and latent transition update operate sequentially.",
+      "category": "Multi-chunk",
+      "search_query": "Describe how BKT observation update and latent transition update operate sequentially.",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.658,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6421,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5926,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.5569
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q056",
+      "original_question": "What transformer model architecture is used to generate BERT embeddings for student questions?",
+      "category": "Unsupported",
+      "search_query": "What transformer model architecture is used to generate BERT embeddings for student questions?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6344,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26": 0.6328,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0": 0.6034,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6019
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13' exceeded threshold with cosine similarity 0.6344 >= 0.55."
+    },
+    {
+      "question_id": "q057",
+      "original_question": "What is the SQL query to calculate a student's grade point average (GPA) in PostgreSQL?",
+      "category": "Unsupported",
+      "search_query": "What is the SQL query to calculate a student's grade point average (GPA) in PostgreSQL?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.7162,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.706,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6582,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6469
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1' exceeded threshold with cosine similarity 0.7162 >= 0.55."
+    },
+    {
+      "question_id": "q059",
+      "original_question": "How does the webcam proctoring system detect student eye movements during MCQ exams?",
+      "category": "Unsupported",
+      "search_query": "How does the webcam proctoring system detect student eye movements during MCQ exams?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6011,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5787,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5654,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7": 0.5649
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1' exceeded threshold with cosine similarity 0.6011 >= 0.55."
+    },
+    {
+      "question_id": "q060",
+      "original_question": "What Stripe API webhook endpoint processes credit card payments for exam fees?",
+      "category": "Unsupported",
+      "search_query": "What Stripe API webhook endpoint processes credit card payments for exam fees?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.618,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.5953,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5794,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7": 0.5777
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6' exceeded threshold with cosine similarity 0.6180 >= 0.55."
+    },
+    {
+      "question_id": "q061",
+      "original_question": "What is the SMTP server hostname and port for sending student password reset emails?",
+      "category": "Unsupported",
+      "search_query": "What is the SMTP server hostname and port for sending student password reset emails?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5888,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7": 0.5851,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.5753,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.56
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6' exceeded threshold with cosine similarity 0.5888 >= 0.55."
+    },
+    {
+      "question_id": "q062",
+      "original_question": "What fine-tuning hyperparameter settings were used for OpenAI GPT-4o?",
+      "category": "Unsupported",
+      "search_query": "What fine-tuning hyperparameter settings were used for OpenAI GPT-4o?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.6296,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17": 0.6158,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23": 0.5819,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5816
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16' exceeded threshold with cosine similarity 0.6296 >= 0.55."
+    },
+    {
+      "question_id": "q063",
+      "original_question": "How does the system calculate Pearson correlation between student exam scores and family income?",
+      "category": "Unsupported",
+      "search_query": "How does the system calculate Pearson correlation between student exam scores and family income?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.5971,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.5917,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.5611,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.5571
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32' exceeded threshold with cosine similarity 0.5971 >= 0.55."
+    },
+    {
+      "question_id": "q064",
+      "original_question": "Which Kubernetes Helm chart deploys the Celery worker pods on AWS EKS?",
+      "category": "Unsupported",
+      "search_query": "Which Kubernetes Helm chart deploys the Celery worker pods on AWS EKS?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5545
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9' exceeded threshold with cosine similarity 0.5545 >= 0.55."
+    },
+    {
+      "question_id": "q069",
+      "original_question": "What is the maximum upload file size for video recordings in the student dashboard?",
+      "category": "Unsupported",
+      "search_query": "What is the maximum upload file size for video recordings in the student dashboard?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.5683
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32' exceeded threshold with cosine similarity 0.5683 >= 0.55."
+    },
+    {
+      "question_id": "q070",
+      "original_question": "What is the exchange rate between the Japanese Yen and the US Dollar today?",
+      "category": "Unsupported",
+      "search_query": "What is the exchange rate between the Japanese Yen and the US Dollar today?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25": 0.5633,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.5569
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25' exceeded threshold with cosine similarity 0.5633 >= 0.55."
+    },
+    {
+      "question_id": "q071",
+      "original_question": "What is the NetworkX betweenness centrality algorithm used to rank concept importance in the Poset DAG?",
+      "category": "Hard Negative",
+      "search_query": "What is the NetworkX betweenness centrality algorithm used to rank concept importance in the Poset DAG?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11": 0.6655,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33": 0.6649,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5": 0.6331,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29": 0.6275
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11' exceeded threshold with cosine similarity 0.6655 >= 0.55."
+    },
+    {
+      "question_id": "q072",
+      "original_question": "What is the discount factor gamma used in the Q-Matrix Q-learning reinforcement algorithm?",
+      "category": "Hard Negative",
+      "search_query": "What is the discount factor gamma used in the Q-Matrix Q-learning reinforcement algorithm?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6299,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12": 0.6186,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6182,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.607
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9' exceeded threshold with cosine similarity 0.6299 >= 0.55."
+    },
+    {
+      "question_id": "q073",
+      "original_question": "What is the learning rate of the Adam optimizer used to fit the BKT parameters in PyBKT?",
+      "category": "Hard Negative",
+      "search_query": "What is the learning rate of the Adam optimizer used to fit the BKT parameters in PyBKT?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6721,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6691,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0": 0.6582,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.655
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20' exceeded threshold with cosine similarity 0.6721 >= 0.55."
+    },
+    {
+      "question_id": "q074",
+      "original_question": "What is the Dirichlet prior distribution parameter alpha applied to the Hidden Markov Model in BKT?",
+      "category": "Hard Negative",
+      "search_query": "What is the Dirichlet prior distribution parameter alpha applied to the Hidden Markov Model in BKT?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.616,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6092,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5973,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.5924
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16' exceeded threshold with cosine similarity 0.6160 >= 0.55."
+    },
+    {
+      "question_id": "q075",
+      "original_question": "What is the maximum number of worker threads configured in uvicorn for the FastAPI router?",
+      "category": "Hard Negative",
+      "search_query": "What is the maximum number of worker threads configured in uvicorn for the FastAPI router?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.6003
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30' exceeded threshold with cosine similarity 0.6003 >= 0.55."
+    },
+    {
+      "question_id": "q076",
+      "original_question": "How does Kahn's algorithm compute the critical path duration in the NetworkX graph?",
+      "category": "Hard Negative",
+      "search_query": "How does Kahn's algorithm compute the critical path duration in the NetworkX graph?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12": 0.6793,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6387,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.6274,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.626
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12' exceeded threshold with cosine similarity 0.6793 >= 0.55."
+    },
+    {
+      "question_id": "q077",
+      "original_question": "What is the maximum Celery broker retry delay when publishing to the Redis cluster?",
+      "category": "Hard Negative",
+      "search_query": "What is the maximum Celery broker retry delay when publishing to the Redis cluster?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.615,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.5898,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5799,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5725
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21' exceeded threshold with cosine similarity 0.6150 >= 0.55."
+    },
+    {
+      "question_id": "q078",
+      "original_question": "What is the Shannon entropy formula in base 2 used to calculate cognitive uncertainty in dina_service.py?",
+      "category": "Hard Negative",
+      "search_query": "What is the Shannon entropy formula in base 2 used to calculate cognitive uncertainty in dina_service.py?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22": 0.7336,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6794,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6683,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19": 0.6159
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22' exceeded threshold with cosine similarity 0.7336 >= 0.55."
+    },
+    {
+      "question_id": "q079",
+      "original_question": "What is the Item Characteristic Curve slope parameter (a-parameter) in the 3PL IRT model in KnowledgeTrace MCQ?",
+      "category": "Hard Negative",
+      "search_query": "What is the Item Characteristic Curve slope parameter (a-parameter) in the 3PL IRT model in KnowledgeTrace MCQ?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6099,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.5909,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5782,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16": 0.5755
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13' exceeded threshold with cosine similarity 0.6099 >= 0.55."
+    },
+    {
+      "question_id": "q080",
+      "original_question": "What is the Gibbs sampling Markov Chain Monte Carlo burn-in iteration count for DINA blocks?",
+      "category": "Hard Negative",
+      "search_query": "What is the Gibbs sampling Markov Chain Monte Carlo burn-in iteration count for DINA blocks?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.6146,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.5913,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5862,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.585
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21' exceeded threshold with cosine similarity 0.6146 >= 0.55."
+    },
+    {
+      "question_id": "q081",
+      "original_question": "What is the ASSISTments dataset test set F1-score for predicting student standardized state exam performance?",
+      "category": "Hard Negative",
+      "search_query": "What is the ASSISTments dataset test set F1-score for predicting student standardized state exam performance?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6812,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6618,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6125,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.6061
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32' exceeded threshold with cosine similarity 0.6812 >= 0.55."
+    },
+    {
+      "question_id": "q082",
+      "original_question": "What is the ROC-AUC score achieved by the DINA model on the Junyi Academy dataset?",
+      "category": "Hard Negative",
+      "search_query": "What is the ROC-AUC score achieved by the DINA model on the Junyi Academy dataset?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6482,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17": 0.634,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6339,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32": 0.6332
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1' exceeded threshold with cosine similarity 0.6482 >= 0.55."
+    },
+    {
+      "question_id": "q083",
+      "original_question": "How many questions are in the Tatsuoka Fraction Subtraction test for college mathematics entrance exams?",
+      "category": "Hard Negative",
+      "search_query": "How many questions are in the Tatsuoka Fraction Subtraction test for college mathematics entrance exams?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6898,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6403,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6095,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2": 0.604
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1' exceeded threshold with cosine similarity 0.6898 >= 0.55."
+    },
+    {
+      "question_id": "q084",
+      "original_question": "What is the WebSocket heartbeat ping interval configured for real-time teacher alerts?",
+      "category": "Hard Negative",
+      "search_query": "What is the WebSocket heartbeat ping interval configured for real-time teacher alerts?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6": 0.5991,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.5813,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5769,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7": 0.5683
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6' exceeded threshold with cosine similarity 0.5991 >= 0.55."
+    },
+    {
+      "question_id": "q085",
+      "original_question": "What is the PostgreSQL connection pool maximum overflow setting in database.py?",
+      "category": "Hard Negative",
+      "search_query": "What is the PostgreSQL connection pool maximum overflow setting in database.py?",
+      "expected_relevant_chunks": [],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30": 0.5946,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21": 0.594,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.5902,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.5818
+      },
+      "expected_behavior": "REJECT",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "THRESHOLD_FAILURE",
+      "explanation": "Irrelevant query should have been rejected, but chunk '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30' exceeded threshold with cosine similarity 0.5946 >= 0.55."
+    },
+    {
+      "question_id": "q086",
+      "original_question": "In machine_learning_algorithms.pdf, what is the default prior knowledge probability P(L0)?",
+      "category": "Document-specific",
+      "search_query": "In machine_learning_algorithms.pdf, what is the default prior knowledge probability P(L0)?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6675,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6571,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11": 0.6549,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.6499
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.6265 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q088",
+      "original_question": "In machine_learning_algorithms.pdf, what formula defines the conjunctive AND rule in DINA?",
+      "category": "Document-specific",
+      "search_query": "In machine_learning_algorithms.pdf, what formula defines the conjunctive AND rule in DINA?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6472,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15": 0.636,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6355,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14": 0.6318
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.6287 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q089",
+      "original_question": "In machine_learning_algorithms.pdf, what is the confidence score when student mastery P is 0.85?",
+      "category": "Document-specific",
+      "search_query": "In machine_learning_algorithms.pdf, what is the confidence score when student mastery P is 0.85?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31": 0.7242,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.7131,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.7079,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3": 0.6997
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q091",
+      "original_question": "In machine_learning_algorithms.pdf, what is the slip probability P(S) in BKT?",
+      "category": "Document-specific",
+      "search_query": "In machine_learning_algorithms.pdf, what is the slip probability P(S) in BKT?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6652,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6595,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.6531,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6481
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Expected chunk had score 0.6377 >= threshold, but was pushed outside top-4 by other higher-scoring non-relevant chunks."
+    },
+    {
+      "question_id": "q093",
+      "original_question": "In machine_learning_algorithms.pdf, which background task triggers asynchronous mastery updates?",
+      "category": "Document-specific",
+      "search_query": "In machine_learning_algorithms.pdf, which background task triggers asynchronous mastery updates?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.7717,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9": 0.6986,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5": 0.6668,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34": 0.6442
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34']",
+      "failure_classification": "RANKING_FAILURE",
+      "explanation": "Only 1/2 expected chunks were retrieved within top-4 above threshold."
+    },
+    {
+      "question_id": "q097",
+      "original_question": "What are their slip and guess probability values?",
+      "category": "Conversational follow-ups",
+      "search_query": "Which models are used in Bayesian Knowledge Tracing and the DINA model?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6928,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8": 0.6136,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18": 0.6135,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26": 0.6031
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    },
+    {
+      "question_id": "q099",
+      "original_question": "What is the exact equation for it?",
+      "category": "Conversational follow-ups",
+      "search_query": "What is the exact equation for student confidence in KnowledgeTrace MCQ?",
+      "expected_relevant_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+      ],
+      "retrieved_chunks": [
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+      ],
+      "similarity_scores": {
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1": 0.7048,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13": 0.6958,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17": 0.6735,
+        "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20": 0.6588
+      },
+      "expected_behavior": "Retrieve chunks ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23']",
+      "actual_behavior": "Retrieved ['3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17', '3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20']",
+      "failure_classification": "EMBEDDING_FAILURE",
+      "explanation": "Expected chunk was not within top-10 unconstrained semantic search candidates."
+    }
+  ]
+}

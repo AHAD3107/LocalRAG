@@ -1,0 +1,68 @@
+{
+  "num_repetitions": 30,
+  "cold_latencies_ms": {
+    "index_load": 4.725899983895943,
+    "bm25_build": 8.689099980983883,
+    "reranker_load": 6593.156999995699,
+    "first_embed": 312.0164999854751,
+    "first_reranker_inference": 125.11120000272058
+  },
+  "warm_component_stats": {
+    "embed": {
+      "mean_ms": 58.37,
+      "median_ms": 57.43,
+      "p95_ms": 69.61,
+      "std_dev_ms": 4.77
+    },
+    "bm25_search": {
+      "mean_ms": 0.11,
+      "median_ms": 0.12,
+      "p95_ms": 0.13,
+      "std_dev_ms": 0.02
+    },
+    "dense_search": {
+      "mean_ms": 0.15,
+      "median_ms": 0.15,
+      "p95_ms": 0.17,
+      "std_dev_ms": 0.01
+    },
+    "rrf_fusion": {
+      "mean_ms": 0.05,
+      "median_ms": 0.06,
+      "p95_ms": 0.06,
+      "std_dev_ms": 0.01
+    },
+    "cross_encoder_10": {
+      "mean_ms": 122.85,
+      "median_ms": 117.49,
+      "p95_ms": 152.38,
+      "std_dev_ms": 18.04
+    },
+    "threshold_filter": {
+      "mean_ms": 0.01,
+      "median_ms": 0.01,
+      "p95_ms": 0.01,
+      "std_dev_ms": 0.0
+    },
+    "end_to_end_hybrid_rerank": {
+      "mean_ms": 179.37,
+      "median_ms": 177.58,
+      "p95_ms": 210.07,
+      "std_dev_ms": 19.14
+    },
+    "end_to_end_bm25_rerank": {
+      "mean_ms": 69.84,
+      "median_ms": 70.74,
+      "p95_ms": 107.54,
+      "std_dev_ms": 31.7
+    }
+  },
+  "reconciliation": {
+    "hybrid_component_sum_ms": 181.54,
+    "hybrid_measured_e2e_ms": 179.37,
+    "hybrid_discrepancy_ms": -2.17,
+    "bm25_component_sum_ms": 122.97,
+    "bm25_measured_e2e_ms": 69.84,
+    "bm25_discrepancy_ms": -53.13
+  }
+}

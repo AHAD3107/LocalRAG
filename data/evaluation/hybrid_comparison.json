@@ -1,0 +1,1113 @@
+{
+  "metadata": {
+    "benchmark_query_count": 100,
+    "relevant_count": 68,
+    "irrelevant_count": 32,
+    "rrf_k": 60,
+    "dense_threshold": 0.55,
+    "bm25_min_score": 3.0,
+    "bm25_indexing_time_ms": 6.45
+  },
+  "summary": {
+    "dense": {
+      "mrr": 0.6042,
+      "precision_at_1": 0.5,
+      "precision_at_2": 0.3824,
+      "precision_at_4": 0.2537,
+      "recall_at_1": 0.299,
+      "recall_at_2": 0.4522,
+      "recall_at_4": 0.5882,
+      "overall_rejection_rate": 0.2188,
+      "unsupported_rejection_rate": 0.3333,
+      "hard_negative_rejection_rate": 0.0,
+      "categories": {
+        "Conversational follow-ups": {
+          "count": 5,
+          "mrr": 0.4333,
+          "recall_at_1": 0.1,
+          "precision_at_1": 0.2,
+          "recall_at_4": 0.6,
+          "rejection_rate": null
+        },
+        "Document-specific": {
+          "count": 10,
+          "mrr": 0.5,
+          "recall_at_1": 0.2917,
+          "precision_at_1": 0.5,
+          "recall_at_4": 0.4375,
+          "rejection_rate": 1.0
+        },
+        "Exact-match": {
+          "count": 20,
+          "mrr": 0.6,
+          "recall_at_1": 0.4,
+          "precision_at_1": 0.5,
+          "recall_at_4": 0.625,
+          "rejection_rate": null
+        },
+        "Hard Negative": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.0
+        },
+        "Multi-chunk": {
+          "count": 15,
+          "mrr": 0.7833,
+          "recall_at_1": 0.2667,
+          "precision_at_1": 0.6667,
+          "recall_at_4": 0.5667,
+          "rejection_rate": null
+        },
+        "Paraphrased": {
+          "count": 20,
+          "mrr": 0.5583,
+          "recall_at_1": 0.275,
+          "precision_at_1": 0.45,
+          "recall_at_4": 0.625,
+          "rejection_rate": null
+        },
+        "Unsupported": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.3333
+        }
+      }
+    },
+    "bm25": {
+      "mrr": 0.7953,
+      "precision_at_1": 0.7206,
+      "precision_at_2": 0.4926,
+      "precision_at_4": 0.3162,
+      "recall_at_1": 0.5282,
+      "recall_at_2": 0.6569,
+      "recall_at_4": 0.8088,
+      "overall_rejection_rate": 0.25,
+      "unsupported_rejection_rate": 0.4,
+      "hard_negative_rejection_rate": 0.0,
+      "categories": {
+        "Conversational follow-ups": {
+          "count": 5,
+          "mrr": 0.6,
+          "recall_at_1": 0.3,
+          "precision_at_1": 0.4,
+          "recall_at_4": 0.8,
+          "rejection_rate": null
+        },
+        "Document-specific": {
+          "count": 10,
+          "mrr": 1.0,
+          "recall_at_1": 0.7292,
+          "precision_at_1": 1.0,
+          "recall_at_4": 0.875,
+          "rejection_rate": 1.0
+        },
+        "Exact-match": {
+          "count": 20,
+          "mrr": 0.8792,
+          "recall_at_1": 0.75,
+          "precision_at_1": 0.85,
+          "recall_at_4": 0.925,
+          "rejection_rate": null
+        },
+        "Hard Negative": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.0
+        },
+        "Multi-chunk": {
+          "count": 15,
+          "mrr": 0.8,
+          "recall_at_1": 0.3056,
+          "precision_at_1": 0.7333,
+          "recall_at_4": 0.6333,
+          "rejection_rate": null
+        },
+        "Paraphrased": {
+          "count": 20,
+          "mrr": 0.675,
+          "recall_at_1": 0.45,
+          "precision_at_1": 0.55,
+          "recall_at_4": 0.8,
+          "rejection_rate": null
+        },
+        "Unsupported": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.4
+        }
+      }
+    },
+    "hybrid": {
+      "mrr": 0.7157,
+      "precision_at_1": 0.5882,
+      "precision_at_2": 0.4559,
+      "precision_at_4": 0.3199,
+      "recall_at_1": 0.3946,
+      "recall_at_2": 0.5882,
+      "recall_at_4": 0.8015,
+      "overall_rejection_rate": 0.1562,
+      "unsupported_rejection_rate": 0.2,
+      "hard_negative_rejection_rate": 0.0,
+      "categories": {
+        "Conversational follow-ups": {
+          "count": 5,
+          "mrr": 0.7,
+          "recall_at_1": 0.4,
+          "precision_at_1": 0.6,
+          "recall_at_4": 0.7,
+          "rejection_rate": null
+        },
+        "Document-specific": {
+          "count": 10,
+          "mrr": 0.6354,
+          "recall_at_1": 0.2917,
+          "precision_at_1": 0.5,
+          "recall_at_4": 0.75,
+          "rejection_rate": 1.0
+        },
+        "Exact-match": {
+          "count": 20,
+          "mrr": 0.7667,
+          "recall_at_1": 0.55,
+          "precision_at_1": 0.65,
+          "recall_at_4": 0.9,
+          "rejection_rate": null
+        },
+        "Hard Negative": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.0
+        },
+        "Multi-chunk": {
+          "count": 15,
+          "mrr": 0.7222,
+          "recall_at_1": 0.2333,
+          "precision_at_1": 0.6,
+          "recall_at_4": 0.6667,
+          "rejection_rate": null
+        },
+        "Paraphrased": {
+          "count": 20,
+          "mrr": 0.6958,
+          "recall_at_1": 0.4,
+          "precision_at_1": 0.55,
+          "recall_at_4": 0.85,
+          "rejection_rate": null
+        },
+        "Unsupported": {
+          "count": 15,
+          "mrr": null,
+          "recall_at_1": null,
+          "precision_at_1": null,
+          "recall_at_4": null,
+          "rejection_rate": 0.2
+        }
+      }
+    }
+  },
+  "latency": {
+    "dense_embed_ms": 35.29,
+    "dense_search_ms": 0.15,
+    "dense_total_ms": 35.44,
+    "bm25_search_ms": 0.12,
+    "hybrid_fusion_ms": 0.2,
+    "hybrid_total_ms": 35.49
+  },
+  "improvements": {
+    "improved_count": 31,
+    "regressed_count": 12,
+    "unchanged_count": 27,
+    "improved_queries": [
+      {
+        "question_id": "q001",
+        "question": "What is the target system name described in the psychometrics specification?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ]
+      },
+      {
+        "question_id": "q002",
+        "question": "What is the target inference speed for KnowledgeTrace MCQ?",
+        "category": "Exact-match",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+        ]
+      },
+      {
+        "question_id": "q003",
+        "question": "Which graph validation library and structure is used in KnowledgeTrace MCQ?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.25,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+        ]
+      },
+      {
+        "question_id": "q006",
+        "question": "What is the default value for Prior Knowledge P(L0) in BKT?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6"
+        ]
+      },
+      {
+        "question_id": "q007",
+        "question": "What is the default value for Learning Transition P(T) in BKT?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15"
+        ]
+      },
+      {
+        "question_id": "q008",
+        "question": "What is the default value for Careless Slip P(S) in BKT?",
+        "category": "Exact-match",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+        ]
+      },
+      {
+        "question_id": "q010",
+        "question": "What is the latent learning transition formula used in Step 2 of BKT?",
+        "category": "Exact-match",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6"
+        ]
+      },
+      {
+        "question_id": "q011",
+        "question": "Who formalized the DINA model and in which year?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        ]
+      },
+      {
+        "question_id": "q018",
+        "question": "What confidence score is produced when probability P equals 0.50?",
+        "category": "Exact-match",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.25,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23"
+        ]
+      },
+      {
+        "question_id": "q023",
+        "question": "How does the system treat a learner's actual comprehension level in psychological modeling?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c3",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32"
+        ]
+      },
+      {
+        "question_id": "q025",
+        "question": "Where are raw student submissions initially committed before AI processing?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.3333,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ]
+      },
+      {
+        "question_id": "q030",
+        "question": "What model handles questions that test several distinct subject areas at the same time?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        ]
+      },
+      {
+        "question_id": "q031",
+        "question": "What happens in DINA if a pupil lacks just a single prerequisite skill for a question?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.25,
+        "hybrid_mrr": 0.3333,
+        "dense_r4": 0.5,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27"
+        ]
+      },
+      {
+        "question_id": "q033",
+        "question": "Under what conditions does the DINA service switch to a closed-form O(1) single-skill fallback?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        ]
+      },
+      {
+        "question_id": "q034",
+        "question": "What are the three confidence categories used to rate diagnostic certainty?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+        ]
+      },
+      {
+        "question_id": "q036",
+        "question": "What role does Layer 1 play relative to Layer 2 and Layer 3?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c25"
+        ]
+      },
+      {
+        "question_id": "q037",
+        "question": "Which database table stores the student mastery probabilities computed by BKT?",
+        "category": "Paraphrased",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30"
+        ]
+      },
+      {
+        "question_id": "q040",
+        "question": "Which psychometric benchmark established the 8 skill attributes for fraction subtraction?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.3333,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17"
+        ]
+      },
+      {
+        "question_id": "q041",
+        "question": "How do Layer 1, Layer 2, and Layer 3 collaborate to guide student learning?",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.3333,
+        "hybrid_r4": 0.6667,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5"
+        ]
+      },
+      {
+        "question_id": "q043",
+        "question": "What are the slip and guess parameter values used in both BKT and DINA?",
+        "category": "Multi-chunk",
+        "dense_mrr": 0.25,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20"
+        ]
+      },
+      {
+        "question_id": "q047",
+        "question": "Compare the initial BKT prior probability with the probability after a first correct response in the student attempt example.",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ]
+      },
+      {
+        "question_id": "q048",
+        "question": "How does the quadratic entropy confidence equation behave at maximum uncertainty versus strong mastery?",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+        ]
+      },
+      {
+        "question_id": "q049",
+        "question": "Which Python files implement the core algorithms for concept graphs, BKT estimation, and DINA diagnosis?",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.25,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c4"
+        ]
+      },
+      {
+        "question_id": "q052",
+        "question": "What benchmark datasets validate BKT sequence modeling and DINA rule space models respectively?",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c32",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        ]
+      },
+      {
+        "question_id": "q055",
+        "question": "Describe how BKT observation update and latent transition update operate sequentially.",
+        "category": "Multi-chunk",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.3333,
+        "dense_r4": 0.0,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ]
+      },
+      {
+        "question_id": "q086",
+        "question": "In machine_learning_algorithms.pdf, what is the default prior knowledge probability P(L0)?",
+        "category": "Document-specific",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.25,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c11",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13"
+        ]
+      },
+      {
+        "question_id": "q088",
+        "question": "In machine_learning_algorithms.pdf, what formula defines the conjunctive AND rule in DINA?",
+        "category": "Document-specific",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c15",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+        ]
+      },
+      {
+        "question_id": "q091",
+        "question": "In machine_learning_algorithms.pdf, what is the slip probability P(S) in BKT?",
+        "category": "Document-specific",
+        "dense_mrr": 0.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.0,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1"
+        ]
+      },
+      {
+        "question_id": "q096",
+        "question": "What is its target inference speed?",
+        "category": "Conversational follow-ups",
+        "dense_mrr": 0.3333,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c12",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+        ]
+      },
+      {
+        "question_id": "q097",
+        "question": "What are their slip and guess probability values?",
+        "category": "Conversational follow-ups",
+        "dense_mrr": 0.3333,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 0.5,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c16"
+        ]
+      },
+      {
+        "question_id": "q100",
+        "question": "Which function flags a skill as a Likely Missing Prerequisite?",
+        "category": "Conversational follow-ups",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31"
+        ]
+      }
+    ],
+    "regressed_queries": [
+      {
+        "question_id": "q013",
+        "question": "If a student possesses all required skills in DINA, what is their probability of answering correctly?",
+        "category": "Exact-match",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 0.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 0.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c13",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c19"
+        ]
+      },
+      {
+        "question_id": "q014",
+        "question": "If a student misses any required skill in DINA, what is their probability of answering correctly?",
+        "category": "Exact-match",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 0.3333,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c1",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c2",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c24",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c14"
+        ]
+      },
+      {
+        "question_id": "q024",
+        "question": "Which background worker mechanism prevents the user interface from freezing during Bayesian calculations?",
+        "category": "Paraphrased",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 0.25,
+        "dense_r4": 0.5,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ]
+      },
+      {
+        "question_id": "q032",
+        "question": "How does KnowledgeTrace MCQ circumvent exponential computational explosion for large skill sets?",
+        "category": "Paraphrased",
+        "dense_mrr": 0.3333,
+        "hybrid_mrr": 0.25,
+        "dense_r4": 1.0,
+        "hybrid_r4": 1.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c33",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ]
+      },
+      {
+        "question_id": "q038",
+        "question": "Which database table records adjusted mastery and epistemic certainty from DINA?",
+        "category": "Paraphrased",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 1.0,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p3_c17",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c23",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c22",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+        ]
+      },
+      {
+        "question_id": "q044",
+        "question": "Explain the complete journey of an MCQ response from submission to database persistence across services.",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 1.0,
+        "dense_r4": 0.75,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c30",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+        ]
+      },
+      {
+        "question_id": "q045",
+        "question": "How does the system ensure fast execution at both the API layer and the mathematical model layer?",
+        "category": "Multi-chunk",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 0.0,
+        "dense_r4": 0.3333,
+        "hybrid_r4": 0.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c26",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c18",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29"
+        ]
+      },
+      {
+        "question_id": "q050",
+        "question": "What database tables store the outputs of API ingestion, BKT estimation, and DINA diagnosis?",
+        "category": "Multi-chunk",
+        "dense_mrr": 0.5,
+        "hybrid_mrr": 0.0,
+        "dense_r4": 0.5,
+        "hybrid_r4": 0.0,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c31",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c29",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p5_c27",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7"
+        ]
+      },
+      {
+        "question_id": "q054",
+        "question": "How does the system prevent UI lag during student submission while calculating Bayesian updates in the background?",
+        "category": "Multi-chunk",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 0.5,
+        "dense_r4": 1.0,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c7",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c6",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c20",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p4_c21"
+        ]
+      },
+      {
+        "question_id": "q065",
+        "question": "What is the current outdoor weather temperature in London?",
+        "category": "Unsupported",
+        "regression": "Correct rejection in Dense falsely accepted in Hybrid"
+      },
+      {
+        "question_id": "q068",
+        "question": "Who was the lead architect who designed the Eiffel Tower in Paris?",
+        "category": "Unsupported",
+        "regression": "Correct rejection in Dense falsely accepted in Hybrid"
+      },
+      {
+        "question_id": "q093",
+        "question": "In machine_learning_algorithms.pdf, which background task triggers asynchronous mastery updates?",
+        "category": "Document-specific",
+        "dense_mrr": 1.0,
+        "hybrid_mrr": 0.3333,
+        "dense_r4": 0.5,
+        "hybrid_r4": 0.5,
+        "dense_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c5",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34"
+        ],
+        "hybrid_retrieved": [
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c9",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p6_c34",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p2_c8",
+          "3e3db83d0094b529a233181a9ec9adeeb2bc0fee18650161ecbb43202a6ae582_p1_c0"
+        ]
+      }
+    ]
+  }
+}

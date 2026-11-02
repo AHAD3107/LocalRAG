@@ -258,6 +258,16 @@ class TestIngestionResult:
         assert result.is_usable is True
         assert len(result.warnings) == 1
 
+    def test_extraction_result_is_usable_before_chunking(self):
+        result = IngestionResult(
+            status=IngestionStatus.SUCCESS,
+            doc_id="d1",
+            source_filename="extracted.pdf",
+            total_pages=1,
+            pages=[ExtractedPage(page_number=1, text="Extracted text")],
+        )
+        assert result.is_usable is True
+
     def test_unusable_ingestion_results(self):
         no_text_result = IngestionResult(
             status=IngestionStatus.NO_TEXT,

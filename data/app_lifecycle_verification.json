@@ -1,0 +1,21 @@
+{
+  "initial_session": {
+    "uploaded_doc_id": "6fcd9478456f407a95735598c28f2e54b2b53832c9592e5cc74052ad3320e282",
+    "chunks": 2,
+    "question": "What is the target release date?",
+    "answer": "The direct factual statement that answers the question is:\n\n\"The target release date is 15 November 2026.\"\n\nThis information can be found on page 2 of the lifecycle specification document (Source 1).",
+    "source_file": "lifecycle_spec.pdf",
+    "source_page": 2,
+    "source_score": 0.6923955082893372
+  },
+  "restarted_session": {
+    "listed_docs_count": 1,
+    "re_query_answer": "The target release date mentioned in the reference material is 15 November 2026.",
+    "source_page": 2
+  },
+  "deletion": {
+    "removed_chunks": 2,
+    "post_deletion_doc_count": 0,
+    "post_deletion_sources": 0
+  }
+}

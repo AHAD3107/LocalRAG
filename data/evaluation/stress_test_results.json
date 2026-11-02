@@ -1,0 +1,145 @@
+{
+  "concurrency_stress": {
+    "num_requests": 20,
+    "successful_requests": 20,
+    "failed_requests": 0,
+    "error_rate_pct": 0.0,
+    "total_duration_sec": 45.22,
+    "throughput_req_per_sec": 0.44,
+    "latency_min_ms": 12342.85,
+    "latency_mean_ms": 31178.17,
+    "latency_p50_ms": 32919.3,
+    "latency_p95_ms": 43904.76,
+    "latency_max_ms": 45205.98
+  },
+  "repeated_document_operations": {
+    "num_cycles": 10,
+    "rss_before_mb": 734.5,
+    "rss_after_mb": 728.83,
+    "rss_growth_mb": -5.67,
+    "baseline_chunks_preserved": 102,
+    "all_cycles_verified": true,
+    "cycle_details": [
+      {
+        "cycle": 1,
+        "doc_id": "70da8183a3719d203d90aeaa529b1ee6c31a06843294fada24568c5f37aaae10",
+        "added_chunks": 2,
+        "duration_ms": 358.6,
+        "rss_mb": 737.19
+      },
+      {
+        "cycle": 2,
+        "doc_id": "224db1877d622dfa3215eef7fdcc39acf6ca21c9be2f2390d699ef1df8c22c50",
+        "added_chunks": 2,
+        "duration_ms": 493.03,
+        "rss_mb": 737.25
+      },
+      {
+        "cycle": 3,
+        "doc_id": "7fc8fcfd575fb2411dc9015445e9edf01a4ebd9f2a8500d868b0e37762538370",
+        "added_chunks": 2,
+        "duration_ms": 435.15,
+        "rss_mb": 728.2
+      },
+      {
+        "cycle": 4,
+        "doc_id": "aaf2273b862a10f9583a1e702bc396712809ee685260427bd51107401f085adf",
+        "added_chunks": 2,
+        "duration_ms": 358.12,
+        "rss_mb": 728.49
+      },
+      {
+        "cycle": 5,
+        "doc_id": "075f98bb975a0806fc7fbae555fc8b35a9eec27a6befbf6534dc27035f78741e",
+        "added_chunks": 2,
+        "duration_ms": 360.85,
+        "rss_mb": 728.77
+      },
+      {
+        "cycle": 6,
+        "doc_id": "4476cce7d0b00ced3db46ce6c389c50f0dba8be3e6382527a272789e218b4c1f",
+        "added_chunks": 2,
+        "duration_ms": 343.22,
+        "rss_mb": 728.77
+      },
+      {
+        "cycle": 7,
+        "doc_id": "3146dbf1d27fc3250f3a39bcce45ccee7bc0df5ffbe543214348ebd361111be3",
+        "added_chunks": 2,
+        "duration_ms": 394.94,
+        "rss_mb": 728.82
+      },
+      {
+        "cycle": 8,
+        "doc_id": "44ccf727b1169ce7c079b6c88e44592b25d4902985c7e09a4f97f65823d759ea",
+        "added_chunks": 2,
+        "duration_ms": 380.08,
+        "rss_mb": 728.82
+      },
+      {
+        "cycle": 9,
+        "doc_id": "1ea5bfb81695e2478aa1cfded6e46981ec460ae2bb5fb9ed68cd239821c43744",
+        "added_chunks": 2,
+        "duration_ms": 409.91,
+        "rss_mb": 728.83
+      },
+      {
+        "cycle": 10,
+        "doc_id": "f3567b0eae8d545ba0241dfcf572295552e07239258c901d94261a7e076c597d",
+        "added_chunks": 2,
+        "duration_ms": 399.06,
+        "rss_mb": 728.83
+      }
+    ]
+  },
+  "memory_and_resource_stability": {
+    "num_inferences": 50,
+    "singleton_verified": true,
+    "reranker_instance_id_before": 2332502912864,
+    "reranker_instance_id_after": 2332502912864,
+    "rss_before_mb": 728.83,
+    "rss_after_mb": 794.66,
+    "rss_growth_mb": 65.83,
+    "bounded_growth_verified": true,
+    "latency_mean_ms": 198.72,
+    "latency_p50_ms": 189.82,
+    "latency_p95_ms": 248.03
+  },
+  "edge_cases_and_failures": {
+    "empty_query": {
+      "status_code": 422,
+      "expected_code": 422,
+      "handled_correctly": true
+    },
+    "long_query_2000_chars": {
+      "status_code": 200,
+      "expected_code": 200,
+      "handled_correctly": true
+    },
+    "oversized_query_5000_chars": {
+      "status_code": 422,
+      "expected_code": 422,
+      "handled_correctly": true
+    },
+    "nonexistent_doc_id": {
+      "status_code": 404,
+      "expected_code": 404,
+      "handled_correctly": true
+    },
+    "oversized_pdf_upload": {
+      "status_code": 413,
+      "expected_code": 413,
+      "handled_correctly": true
+    },
+    "interrupted_stream": {
+      "stream_started": true,
+      "handled_without_crash": true
+    },
+    "ollama_unavailable": {
+      "status_code": 503,
+      "expected_code": 503,
+      "handled_correctly": true
+    },
+    "all_edge_cases_passed": true
+  }
+}

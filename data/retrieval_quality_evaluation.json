@@ -1,0 +1,559 @@
+{
+  "configuration": {
+    "embedding_model": "nomic-embed-text",
+    "similarity_threshold": 0.55,
+    "corpus_chunk_count": 5,
+    "test_query_count": 16
+  },
+  "overall_metrics": {
+    "mean_reciprocal_rank_mrr": 0.8889,
+    "recall_at_1": 0.7778,
+    "precision_at_1": 0.8889,
+    "recall_at_2": 0.8333,
+    "precision_at_2": 0.5,
+    "recall_at_4": 0.8889,
+    "precision_at_4": 0.2778,
+    "unsupported_rejection_rate": 0.5714,
+    "latency": {
+      "mean_embed_ms": 29.97,
+      "mean_search_ms": 0.14,
+      "mean_total_ms": 30.11,
+      "median_total_ms": 27.72,
+      "min_total_ms": 18.76,
+      "max_total_ms": 53.15,
+      "p95_total_ms": 44.19
+    }
+  },
+  "category_metrics": {
+    "Exact-match": {
+      "count": 3,
+      "mrr": 1.0,
+      "recall_at_1": 1.0,
+      "precision_at_1": 1.0,
+      "recall_at_2": 1.0,
+      "precision_at_2": 0.5,
+      "recall_at_4": 1.0,
+      "rejection_rate": null,
+      "mean_latency_ms": 39.2
+    },
+    "Paraphrased": {
+      "count": 4,
+      "mrr": 0.75,
+      "recall_at_1": 0.75,
+      "precision_at_1": 0.75,
+      "recall_at_2": 0.75,
+      "precision_at_2": 0.375,
+      "recall_at_4": 0.75,
+      "rejection_rate": null,
+      "mean_latency_ms": 36.5
+    },
+    "Multi-chunk": {
+      "count": 2,
+      "mrr": 1.0,
+      "recall_at_1": 0.5,
+      "precision_at_1": 1.0,
+      "recall_at_2": 0.75,
+      "precision_at_2": 0.75,
+      "recall_at_4": 1.0,
+      "rejection_rate": null,
+      "mean_latency_ms": 27.4
+    },
+    "Unsupported": {
+      "count": 3,
+      "mrr": null,
+      "recall_at_1": null,
+      "precision_at_1": null,
+      "recall_at_2": null,
+      "precision_at_2": null,
+      "recall_at_4": null,
+      "rejection_rate": 1.0,
+      "mean_latency_ms": 22.0
+    },
+    "Hard Negative": {
+      "count": 4,
+      "mrr": null,
+      "recall_at_1": null,
+      "precision_at_1": null,
+      "recall_at_2": null,
+      "precision_at_2": null,
+      "recall_at_4": null,
+      "rejection_rate": 0.25,
+      "mean_latency_ms": 24.3
+    }
+  },
+  "query_results": [
+    {
+      "category": "Exact-match",
+      "query": "When is the project deadline?",
+      "expected_chunk_ids": [
+        "chunk_2"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_2"
+      ],
+      "all_scores": {
+        "chunk_2": 0.6824,
+        "chunk_1": 0.4851,
+        "chunk_5": 0.4503,
+        "chunk_3": 0.4349,
+        "chunk_4": 0.4218
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 52.97,
+        "search": 0.18,
+        "total": 53.15
+      }
+    },
+    {
+      "category": "Exact-match",
+      "query": "What is the project name and purpose?",
+      "expected_chunk_ids": [
+        "chunk_1"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_1"
+      ],
+      "all_scores": {
+        "chunk_1": 0.6673,
+        "chunk_2": 0.4912,
+        "chunk_5": 0.4704,
+        "chunk_4": 0.4504,
+        "chunk_3": 0.4242
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 39.6,
+        "search": 0.14,
+        "total": 39.75
+      }
+    },
+    {
+      "category": "Exact-match",
+      "query": "How is vector storage handled?",
+      "expected_chunk_ids": [
+        "chunk_4"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_4",
+        "chunk_3"
+      ],
+      "all_scores": {
+        "chunk_4": 0.6427,
+        "chunk_3": 0.5862,
+        "chunk_5": 0.5237,
+        "chunk_1": 0.4983,
+        "chunk_2": 0.4426
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 24.59,
+        "search": 0.12,
+        "total": 24.71
+      }
+    },
+    {
+      "category": "Paraphrased",
+      "query": "By which date does this system need to be completed?",
+      "expected_chunk_ids": [
+        "chunk_2"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_2"
+      ],
+      "all_scores": {
+        "chunk_2": 0.6799,
+        "chunk_5": 0.5003,
+        "chunk_3": 0.4844,
+        "chunk_4": 0.4646,
+        "chunk_1": 0.4445
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 32.44,
+        "search": 0.11,
+        "total": 32.55
+      }
+    },
+    {
+      "category": "Paraphrased",
+      "query": "What offline technology does this tool provide?",
+      "expected_chunk_ids": [
+        "chunk_1"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_5"
+      ],
+      "all_scores": {
+        "chunk_5": 0.6053,
+        "chunk_3": 0.5095,
+        "chunk_1": 0.5091,
+        "chunk_2": 0.4788,
+        "chunk_4": 0.4559
+      },
+      "reciprocal_rank": 0.0,
+      "precision_at_k": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "recall_at_k": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 34.72,
+        "search": 0.16,
+        "total": 34.88
+      }
+    },
+    {
+      "category": "Paraphrased",
+      "query": "Which AI models are used for vector representation and chat answers?",
+      "expected_chunk_ids": [
+        "chunk_3"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_3"
+      ],
+      "all_scores": {
+        "chunk_3": 0.7344,
+        "chunk_1": 0.5219,
+        "chunk_4": 0.4985,
+        "chunk_5": 0.4467,
+        "chunk_2": 0.443
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 41.09,
+        "search": 0.11,
+        "total": 41.21
+      }
+    },
+    {
+      "category": "Paraphrased",
+      "query": "Does the system maintain confidentiality without cloud access?",
+      "expected_chunk_ids": [
+        "chunk_5"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_5"
+      ],
+      "all_scores": {
+        "chunk_5": 0.7163,
+        "chunk_1": 0.4989,
+        "chunk_4": 0.4563,
+        "chunk_2": 0.4151,
+        "chunk_3": 0.4061
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.25
+      },
+      "recall_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 37.09,
+        "search": 0.12,
+        "total": 37.21
+      }
+    },
+    {
+      "category": "Multi-chunk",
+      "query": "What backend framework and local AI models are used in LocalRAG?",
+      "expected_chunk_ids": [
+        "chunk_3",
+        "chunk_2"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_2",
+        "chunk_3"
+      ],
+      "all_scores": {
+        "chunk_2": 0.6803,
+        "chunk_3": 0.6056,
+        "chunk_5": 0.5442,
+        "chunk_4": 0.5029,
+        "chunk_1": 0.4909
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 0.5
+      },
+      "recall_at_k": {
+        "1": 0.5,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 32.6,
+        "search": 0.12,
+        "total": 32.72
+      }
+    },
+    {
+      "category": "Multi-chunk",
+      "query": "How does LocalRAG maintain privacy and how does it store vector embeddings?",
+      "expected_chunk_ids": [
+        "chunk_5",
+        "chunk_4"
+      ],
+      "retrieved_chunk_ids": [
+        "chunk_5",
+        "chunk_3",
+        "chunk_1",
+        "chunk_4"
+      ],
+      "all_scores": {
+        "chunk_5": 0.6467,
+        "chunk_3": 0.63,
+        "chunk_1": 0.6196,
+        "chunk_4": 0.5999,
+        "chunk_2": 0.4711
+      },
+      "reciprocal_rank": 1.0,
+      "precision_at_k": {
+        "1": 1.0,
+        "2": 0.5,
+        "4": 0.5
+      },
+      "recall_at_k": {
+        "1": 0.5,
+        "2": 0.5,
+        "4": 1.0
+      },
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 21.96,
+        "search": 0.13,
+        "total": 22.09
+      }
+    },
+    {
+      "category": "Unsupported",
+      "query": "Who is the lead project manager and architect?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [],
+      "all_scores": {
+        "chunk_2": 0.5031,
+        "chunk_1": 0.453,
+        "chunk_5": 0.4297,
+        "chunk_4": 0.4242,
+        "chunk_3": 0.4206
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": true,
+      "latency_ms": {
+        "embed": 21.73,
+        "search": 0.15,
+        "total": 21.88
+      }
+    },
+    {
+      "category": "Unsupported",
+      "query": "What is the current weather in Tokyo?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [],
+      "all_scores": {
+        "chunk_2": 0.5164,
+        "chunk_3": 0.4478,
+        "chunk_4": 0.4476,
+        "chunk_1": 0.4312,
+        "chunk_5": 0.4226
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": true,
+      "latency_ms": {
+        "embed": 18.65,
+        "search": 0.12,
+        "total": 18.76
+      }
+    },
+    {
+      "category": "Unsupported",
+      "query": "How much venture capital funding was raised?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [],
+      "all_scores": {
+        "chunk_2": 0.4213,
+        "chunk_3": 0.4058,
+        "chunk_1": 0.3736,
+        "chunk_5": 0.3668,
+        "chunk_4": 0.3325
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": true,
+      "latency_ms": {
+        "embed": 25.21,
+        "search": 0.24,
+        "total": 25.46
+      }
+    },
+    {
+      "category": "Hard Negative",
+      "query": "What is the deadline for filing corporate taxes?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "chunk_2"
+      ],
+      "all_scores": {
+        "chunk_2": 0.6081,
+        "chunk_5": 0.4263,
+        "chunk_1": 0.4166,
+        "chunk_4": 0.3951,
+        "chunk_3": 0.3892
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 29.8,
+        "search": 0.18,
+        "total": 29.99
+      }
+    },
+    {
+      "category": "Hard Negative",
+      "query": "Which AWS cloud provider hosts serverless Lambda functions?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "chunk_5"
+      ],
+      "all_scores": {
+        "chunk_5": 0.566,
+        "chunk_2": 0.4916,
+        "chunk_3": 0.4512,
+        "chunk_4": 0.4323,
+        "chunk_1": 0.4078
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 24.08,
+        "search": 0.14,
+        "total": 24.22
+      }
+    },
+    {
+      "category": "Hard Negative",
+      "query": "How do I configure my OpenAI GPT-4 API key in the cloud?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [],
+      "all_scores": {
+        "chunk_5": 0.5466,
+        "chunk_4": 0.5191,
+        "chunk_2": 0.5138,
+        "chunk_1": 0.5041,
+        "chunk_3": 0.488
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": true,
+      "latency_ms": {
+        "embed": 22.03,
+        "search": 0.11,
+        "total": 22.14
+      }
+    },
+    {
+      "category": "Hard Negative",
+      "query": "What is the pricing model for ChromaDB and Pinecone vector databases?",
+      "expected_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "chunk_3"
+      ],
+      "all_scores": {
+        "chunk_3": 0.5866,
+        "chunk_4": 0.5321,
+        "chunk_1": 0.4933,
+        "chunk_2": 0.4904,
+        "chunk_5": 0.4661
+      },
+      "reciprocal_rank": null,
+      "precision_at_k": null,
+      "recall_at_k": null,
+      "rejected_below_threshold": false,
+      "latency_ms": {
+        "embed": 20.9,
+        "search": 0.13,
+        "total": 21.03
+      }
+    }
+  ]
+}
