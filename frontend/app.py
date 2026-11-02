@@ -3,10 +3,19 @@ from __future__ import annotations
 
 import json
 import os
+import sys
+from pathlib import Path
 from typing import Iterator
+
+# Ensure project root is in sys.path for direct script execution
+_project_root = str(Path(__file__).resolve().parent.parent)
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
 
 import gradio as gr
 import httpx
+
+from src.monitoring.system_monitor import format_metrics_for_display
 
 
 def get_api_url() -> str:
@@ -111,7 +120,14 @@ def upload_pdf(file: str | None) -> tuple[str, dict[str, object]]:
                 f"{refresh_status}",
                 update,
             )
-        return f"Upload failed (HTTP {exc.response.status_code}). {refresh_status}", update
+        detail = ""
+        try:
+            body = exc.response.json()
+            if isinstance(body, dict) and "detail" in body:
+                detail = f": {body['detail']}"
+        except Exception:
+            pass
+        return f"Upload failed (HTTP {exc.response.status_code}{detail}). {refresh_status}", update
     except (OSError, httpx.HTTPError, ValueError) as exc:
         refresh_status, update = refresh_documents()
         return f"Upload failed: {exc}. {refresh_status}", update
@@ -296,6 +312,14 @@ def delete_ui(document_id: str | None, confirmed: bool) -> tuple[str, dict[str, 
 with gr.Blocks(title="LocalRAG") as demo:
     gr.Markdown("# LocalRAG\nAsk questions about your local PDF collection with verified offline inference.")
 
+    with gr.Accordion("Live System Resource Monitor", open=True):
+        with gr.Row():
+            cpu_metric = gr.Textbox(label="CPU Utilization", value="--", interactive=False, scale=1)
+            ram_metric = gr.Textbox(label="System RAM (Used / Total)", value="--", interactive=False, scale=2)
+            gpu_metric = gr.Textbox(label="GPU Utilization", value="--", interactive=False, scale=2)
+            vram_metric = gr.Textbox(label="GPU VRAM (Used / Total)", value="--", interactive=False, scale=2)
+            temp_metric = gr.Textbox(label="GPU Temperature", value="--", interactive=False, scale=1)
+
     with gr.Row():
         with gr.Column(scale=4):
             gr.Markdown("### Document Management")
@@ -345,6 +369,19 @@ with gr.Blocks(title="LocalRAG") as demo:
             ask_btn.click(chat_stream, inputs=[question, chatbot, model_selector, search_scope], outputs=[question, chatbot, sources])
             question.submit(chat_stream, inputs=[question, chatbot, model_selector, search_scope], outputs=[question, chatbot, sources])
             clear_btn.click(clear_chat, outputs=[question, chatbot, sources])
+
+    # Live system resource monitoring updates
+    monitor_timer = gr.Timer(value=2.0)
+    monitor_timer.tick(
+        fn=format_metrics_for_display,
+        inputs=[],
+        outputs=[cpu_metric, ram_metric, gpu_metric, vram_metric, temp_metric],
+    )
+    demo.load(
+        fn=format_metrics_for_display,
+        inputs=[],
+        outputs=[cpu_metric, ram_metric, gpu_metric, vram_metric, temp_metric],
+    )
 
 
 if __name__ == "__main__":
