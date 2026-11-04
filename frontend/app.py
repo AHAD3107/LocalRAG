@@ -250,6 +250,7 @@ def chat_stream(
                 user_query=query_text,
                 model=model,
                 retrieval_strategy=agent_strategy,
+                document_scope=selected_doc_id,
             )
 
             activity_lines = [f"- {act}" for act in state.activity_log]
