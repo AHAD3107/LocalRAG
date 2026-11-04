@@ -1,4 +1,4 @@
-﻿# Backend API & Server
+# Backend API & Server
 fastapi>=0.111.0,<0.116.0
 uvicorn[standard]>=0.30.0,<0.33.0
 pydantic>=2.7.0,<2.11.0
@@ -17,3 +17,7 @@ pytest>=8.2.0,<8.4.0
 # Frontend GUI
 gradio>=4.44.0,<5.0.0
 huggingface-hub>=0.19.3,<0.26.0
+starlette>=0.40.0,<0.47.0
+
+# Model Context Protocol (MCP) Server & Client
+mcp>=2.3.0,<3.0.0
