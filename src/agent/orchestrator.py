@@ -266,36 +266,60 @@ class AgentOrchestrator:
                             if "citation" in item:
                                 state.add_citation(item["citation"])
 
+                # High-level synthesis tools already return completed user-facing answers
+                if tool_name in ("summarize_document", "compare_documents", "generate_study_questions"):
+                    if isinstance(result, dict) and not result.get("error"):
+                        if "summary" in result and result["summary"]:
+                            topics = result.get("key_topics", [])
+                            topics_str = "\n".join([f"- {t}" for t in topics]) if topics else ""
+                            if topics_str:
+                                state.final_answer = f"{result['summary']}\n\n**Key Topics:**\n{topics_str}"
+                            else:
+                                state.final_answer = result["summary"]
+                            state.add_activity("Synthesizing final grounded response")
+                            break
+                        elif "comparison" in result and result["comparison"]:
+                            state.final_answer = result["comparison"]
+                            state.add_activity("Synthesizing final grounded response")
+                            break
+                        elif "questions_content" in result and result["questions_content"]:
+                            state.final_answer = result["questions_content"]
+                            state.add_activity("Synthesizing final grounded response")
+                            break
+
                 # Feed observation back to model
                 messages.append({
                     "role": "assistant",
-                    "content": f"Invoking tool: {tool_name} with arguments: {json.dumps(args)}",
+                    "content": f'{{"action": "{tool_name}", "parameters": {json.dumps(args)}}}',
                 })
                 # Truncate large observation payloads to protect context window
                 obs_str = json.dumps(result)
                 if len(obs_str) > 3000:
                     obs_str = obs_str[:3000] + "... [Observation truncated to prevent context overflow]"
 
-                if tool_name in ("summarize_document", "compare_documents", "generate_study_questions"):
-                    instruction = "The tool has completed the synthesis. Present this final answer directly to the user in clean Markdown. DO NOT call any more tools. DO NOT output any JSON."
-                else:
-                    instruction = "Now use this information to answer the user request or determine the next step."
-
                 messages.append({
                     "role": "user",
-                    "content": f"[Tool Observation from {tool_name}]:\n{obs_str}\n\n{instruction}",
+                    "content": f"[Tool Observation from {tool_name}]:\n{obs_str}\n\nNow use this information to answer the user request or determine the next step.",
                 })
+
+            if state.final_answer:
+                break
 
             if not executed_any:
                 if not state.final_answer:
                     state.final_answer = content or "Completed requested actions."
                 break
 
-        # Check if final_answer is empty, a raw tool call, or if the anti-cycle guard terminated
+        # Check if final_answer is empty, an echoed tool call, a raw JSON tool call, or if anti-cycle terminated
         is_raw_tool_call = False
         if state.final_answer:
             stripped = state.final_answer.strip()
-            if ('"action":' in stripped or '"tool":' in stripped or '"name":' in stripped) and "{" in stripped:
+            if (
+                stripped.startswith("Invoking tool:")
+                or "Invoking tool:" in stripped
+                or (('{"action":' in stripped or '"action":' in stripped) and len(stripped) < 300)
+                or (('{"name":' in stripped or '"tool":' in stripped) and len(stripped) < 300)
+            ):
                 is_raw_tool_call = True
 
         # Fallback or extract synthesized result if final answer was raw tool JSON or empty
@@ -303,13 +327,25 @@ class AgentOrchestrator:
             if state.records:
                 last_rec = state.records[-1]
                 if isinstance(last_rec.result, dict) and "summary" in last_rec.result:
-                    state.final_answer = last_rec.result["summary"]
+                    topics = last_rec.result.get("key_topics", [])
+                    topics_str = "\n".join([f"- {t}" for t in topics]) if topics else ""
+                    if topics_str:
+                        state.final_answer = f"{last_rec.result['summary']}\n\n**Key Topics:**\n{topics_str}"
+                    else:
+                        state.final_answer = last_rec.result["summary"]
                 elif isinstance(last_rec.result, dict) and "comparison" in last_rec.result:
                     state.final_answer = last_rec.result["comparison"]
                 elif isinstance(last_rec.result, dict) and "questions_content" in last_rec.result:
                     state.final_answer = last_rec.result["questions_content"]
                 elif isinstance(last_rec.result, dict) and "answer" in last_rec.result:
                     state.final_answer = last_rec.result["answer"]
+                elif isinstance(last_rec.result, dict) and "results" in last_rec.result:
+                    passages = []
+                    for r in last_rec.result["results"]:
+                        c = r.get("citation", "")
+                        t = r.get("text", "")
+                        passages.append(f"**[{c}]**\n{t}")
+                    state.final_answer = "\n\n".join(passages)
                 else:
                     state.final_answer = "Completed tool execution. " + json.dumps(last_rec.result, indent=2)
             else:
