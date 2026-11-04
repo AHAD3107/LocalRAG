@@ -224,6 +224,7 @@ class AgentOrchestrator:
                 if call_sig == last_tool_call_signature:
                     logger.warning("Detected duplicate consecutive tool call: %s. Terminating loop.", call_sig)
                     state.add_activity("Detected redundant tool call; formulating final response")
+                    state.final_answer = ""
                     break
                 last_tool_call_signature = call_sig
 
@@ -275,17 +276,30 @@ class AgentOrchestrator:
                 if len(obs_str) > 3000:
                     obs_str = obs_str[:3000] + "... [Observation truncated to prevent context overflow]"
 
+                if tool_name in ("summarize_document", "compare_documents", "generate_study_questions"):
+                    instruction = "The tool has completed the synthesis. Present this final answer directly to the user in clean Markdown. DO NOT call any more tools. DO NOT output any JSON."
+                else:
+                    instruction = "Now use this information to answer the user request or determine the next step."
+
                 messages.append({
                     "role": "user",
-                    "content": f"[Tool Observation from {tool_name}]:\n{obs_str}\n\nNow use this information to answer the user request or determine the next step.",
+                    "content": f"[Tool Observation from {tool_name}]:\n{obs_str}\n\n{instruction}",
                 })
 
             if not executed_any:
-                state.final_answer = content or "Completed requested actions."
+                if not state.final_answer:
+                    state.final_answer = content or "Completed requested actions."
                 break
 
-        # Fallback if no final answer was formulated
-        if not state.final_answer:
+        # Check if final_answer is empty, a raw tool call, or if the anti-cycle guard terminated
+        is_raw_tool_call = False
+        if state.final_answer:
+            stripped = state.final_answer.strip()
+            if ('"action":' in stripped or '"tool":' in stripped or '"name":' in stripped) and "{" in stripped:
+                is_raw_tool_call = True
+
+        # Fallback or extract synthesized result if final answer was raw tool JSON or empty
+        if not state.final_answer or is_raw_tool_call:
             if state.records:
                 last_rec = state.records[-1]
                 if isinstance(last_rec.result, dict) and "summary" in last_rec.result:
